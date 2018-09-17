@@ -1,41 +1,35 @@
-## Welcome to GitHub Pages
+### Welcome to Meme's Homebrew apps
 
-You can use the [editor on GitHub](https://github.com/suchmememanyskill/suchmememanyskill.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files [test](https://discord.gg/D6bumK) REEEEEEEEEE.
+## SD File Installer
+This program atomatically puts all the required files for finalizing setup in the right places, so you don't have to worry about moving the files manually yourself. Place the .3dsx file inside the 3ds folder and you should be good to launch it, and install all the files you need to get going
 
-.
+[Download](https://github.com/suchmememanyskill/Sd-File-Installer/releases)
+[Source](https://github.com/suchmememanyskill/Sd-File-Installer)
 
-[test](https://discord.gg/D6bumK)
+#---------------------
+Anemone3ds - A theming tool by TeamAnemone. Drop Theme zips obtained from [Themeplaza](https://themeplaza.eu/themes?sort=most-downloaded) and drop them in your Themes folder that's located on the root of your sd card
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Checkpoint - A save manager by BernardoGiordano. Dumped saves are located in 3ds/checkpoint/titles
 
-### Markdown
+Homebrew_launcher - Launches the homebrew launcher from a home icon. Made by mariohackandglitch  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+DSP1 - Dumps a system file so you can listen to sound in homebrew apps. Made by zoogie
 
-```markdown
-Syntax highlighted code block
+Lumaupdater - Updates luma on your sd card and on your CTRNAND. Made by KunoichiZ
 
-# Header 1
-## Header 2
-### Header 3
+FBI - Install .cia type files (usually .cia type files can be found in the cias folder). Made by Steveice10
 
-- Bulleted
-- List
+GodMode9 - A full fledged file browser and editor for your 3ds. Made by D0K3
 
-1. Numbered
-2. List
+Luma3ds - Custom Firmware for your 3ds. Made by AuroraWright
 
-**Bold** and _Italic_ and `Code` text
+Custom Version Setter - Sets a custom version inside system settings, just for fun. Made by BernardoGiordano
 
-[Link](url) and ![Image](src)
-```
+FTPD - A Tool by mtheall for wirelessly transfering files from and to your 3ds. Works with most ftp clients
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+ctrnotimeoffset - Resets your RTC to 0. Made by ihaveamac
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/suchmememanyskill/suchmememanyskill.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
