@@ -6,7 +6,9 @@ This program atomatically puts all the required files for finalizing setup in th
 [Download](https://github.com/suchmememanyskill/Sd-File-Installer/releases)
 [Source](https://github.com/suchmememanyskill/Sd-File-Installer)
 
-#---------------------
+
+
+# Description of tools provided by SD File Installer
 Anemone3ds - A theming tool by TeamAnemone. Drop Theme zips obtained from [Themeplaza](https://themeplaza.eu/themes?sort=most-downloaded) and drop them in your Themes folder that's located on the root of your sd card
 
 Checkpoint - A save manager by BernardoGiordano. Dumped saves are located in 3ds/checkpoint/titles
