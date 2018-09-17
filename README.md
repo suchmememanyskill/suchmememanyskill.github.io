@@ -28,8 +28,3 @@ Custom Version Setter - Sets a custom version inside system settings, just for f
 FTPD - A Tool by mtheall for wirelessly transfering files from and to your 3ds. Works with most ftp clients
 
 ctrnotimeoffset - Resets your RTC to 0. Made by ihaveamac
-
-
-
-
-
