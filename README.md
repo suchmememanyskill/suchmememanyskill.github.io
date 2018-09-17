@@ -1,7 +1,7 @@
 # Welcome to Meme's Homebrew apps
 
 ## SD File Installer
-This program atomatically puts all the required files for finalizing setup in the right places, so you don't have to worry about moving the files manually yourself. Place the .3dsx file inside the 3ds folder and you should be good to launch it, and install all the files you need to get going
+This program automatically puts all the required files for finalizing setup in the right places, so you don't have to worry about moving the files manually yourself. Place the .3dsx file inside the 3ds folder and you should be good to launch it, and install all the files you need to get going
 
 [Download](https://github.com/suchmememanyskill/Sd-File-Installer/releases)
 [Source](https://github.com/suchmememanyskill/Sd-File-Installer)
