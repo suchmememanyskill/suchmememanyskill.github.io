@@ -1,4 +1,4 @@
-### Welcome to Meme's Homebrew apps
+# Welcome to Meme's Homebrew apps
 
 ## SD File Installer
 This program atomatically puts all the required files for finalizing setup in the right places, so you don't have to worry about moving the files manually yourself. Place the .3dsx file inside the 3ds folder and you should be good to launch it, and install all the files you need to get going
@@ -8,7 +8,7 @@ This program atomatically puts all the required files for finalizing setup in th
 
 
 
-# Description of tools provided by SD File Installer
+### Description of tools provided by SD File Installer
 Anemone3ds - A theming tool by TeamAnemone. Drop Theme zips obtained from [Themeplaza](https://themeplaza.eu/themes?sort=most-downloaded) and drop them in your Themes folder that's located on the root of your sd card
 
 Checkpoint - A save manager by BernardoGiordano. Dumped saves are located in 3ds/checkpoint/titles
