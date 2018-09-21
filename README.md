@@ -2,7 +2,7 @@
 
 ## Steelminer Issues FAQ
 
-### Section 1: Errors while installing homebrew via steelminer
+## Section 1: Errors while installing homebrew via steelminer
 
 ### If the game boots normally
 
@@ -19,7 +19,7 @@ You haven't actually placed the modified save or inproperly renamed it in the st
 Your 3ds has trouble reading the *00000001.sav* file, please check if it's named correctly.
 If it is named correctly, you didn't use **your** movable.sed, which **are not universal**
 
-### Section 2: What can i do with HB only
+## Section 2: What can i do with HB only
 
 You can use the following:
 - Anemone3ds, A 3ds theming tool
@@ -38,7 +38,7 @@ Things you **can't** do:
 - Install your cart based games to your 3ds sd card
 - Virtual console injects
 
-### Section 3: Miscellaneous addons
+## Section 3: Miscellaneous addons
 
 Q = I have a .3dsx file i'd like to use, how do i use it?
 A = You put any .3dsx files in the `3ds` folder so hblauncher can see them
@@ -49,10 +49,9 @@ A = NO
 Some cool programs for hb only can be installed using my easy to use installer
 [Download](https://github.com/suchmememanyskill/Sd-File-Installer/releases)
 
+### ---------------------------------
 
-
-
-## SD File Installer
+# SD Files Installer
 This program automatically puts all the required files for finalizing setup in the right places, so you don't have to worry about moving the files manually yourself. Place the .3dsx file inside the 3ds folder and you should be good to launch it, and install all the files you need to get going
 
 Note: These both work for hb only and cfw, but is primarily focused around **cfw**
