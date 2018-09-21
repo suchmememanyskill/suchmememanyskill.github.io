@@ -1,4 +1,4 @@
-# Welcome to Meme's Homebrew apps & Guides
+<title>Welcome to Meme's Homebrew apps & Guides</title>
 
 ### ---------------------------------
 
