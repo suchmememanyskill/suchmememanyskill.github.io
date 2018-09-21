@@ -4,7 +4,7 @@
 
 ## Guides
 
-[![steelminer](/icons/steelminer.png)](https://suchmememanyskill.github.io/fixsteelminer)
+[![steelminer](/icons/steelminer.png)](https://suchmememanyskill.github.io/sm)
 - Guide if steelminer refuses to work, and a general FAQ for hb only
 
 ## Programs
