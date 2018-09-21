@@ -10,7 +10,7 @@
 
 You haven't actually placed the modified save or inproperly renamed it in the steeldiver data folder, the name of the .sav file should be *00000001.sav* , **and nothing else**
 
-### If the game exits with an error message saying "an error occured trying to launch this app, the system will now restart"
+### If the game exits with an error message saying "an error occured, causing this app to forcibly close, the system will now restart"
 
 - Check your payload.bin (so the otherapp.bin that you got from http://smealum.github.io/3ds/#otherapp that you renamed to payload.bin)
 - Check if you have boot.3dsx on the **root** of the sd card
