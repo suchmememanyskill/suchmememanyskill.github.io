@@ -63,7 +63,7 @@ Note: These both work for hb only and cfw, but is primarily focused around **cfw
 
 
 
-### Description of tools provided by SD File Installer
+### Description of tools provided by SD File Installer - CFW
 Anemone3ds - A theming tool by TeamAnemone. Drop Theme zips obtained from [Themeplaza](https://themeplaza.eu/themes?sort=most-downloaded) and drop them in your Themes folder that's located on the root of your sd card
 
 Checkpoint - A save manager by BernardoGiordano. Dumped saves are located in 3ds/checkpoint/titles
