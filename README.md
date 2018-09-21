@@ -55,6 +55,8 @@ Some cool programs for hb only can be installed using my easy to use installer
 ## SD File Installer
 This program automatically puts all the required files for finalizing setup in the right places, so you don't have to worry about moving the files manually yourself. Place the .3dsx file inside the 3ds folder and you should be good to launch it, and install all the files you need to get going
 
+Note: These both work for hb only and cfw, but is primarily focused around **cfw**
+
 [Download](https://github.com/suchmememanyskill/Sd-File-Installer/releases)
 [Source](https://github.com/suchmememanyskill/Sd-File-Installer)
 
