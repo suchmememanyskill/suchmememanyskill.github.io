@@ -1,5 +1,7 @@
 # Welcome to Meme's Homebrew apps & Guides
 
+### ---------------------------------
+
 ## Steelminer Issues FAQ
 
 ## Section 1: Errors while installing homebrew via steelminer
