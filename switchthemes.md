@@ -1,14 +1,29 @@
 # Switch Themes guide
 
-![switchtheme](/icons/switchtheme.png)
+![PreviewCity](/icons/PreviewCity.jpg)
 
-## This will make your switch a bit more unstable
+## Themes use Layeredfs to overwrite the home menu with themes
 
-- Find a theme you like, for example [this one](https://suchmememanyskill.github.io/files/DiscordSwitchTheme.zip).
-- Drop the **0100000000001000** folder inside the zip in the atmosphere/titles folder.
-- Boot your switch in newest layeredfs mode, that's it!
-- (note: you do need sd card files that are up to date, otherwise this won't work)
+1. Make sure all your sd card files are up to date, you need the newest layeredfs for this to work
+2. Get some themes, [here](https://suchmememanyskill.github.io/files/AllSuchMeme'sThemes.zip) are all my themes
+  - These are specifically 5.X themes, you'll need a different kind of theme file for 6.0
+3. Put the **0100000000001000** folder in Atmosphere/titles from the theme you like
+4. Launch Atmosphere with layeredfs, and you should boot up with a theme!
 
-### This only works on version 5.1 as of this moment (6.0 support soon)
+## My themes:
+
+![PreviewCastle](/icons/PreviewCastle.jpg)
+
+![PreviewCity](/icons/PreviewCity.jpg)
+
+![PreviewFlower](/icons/PreviewFlower.jpg)
+
+![PreviewGrass](/icons/PreviewGrass.jpg)
+
+![PreviewTowerBridge](/icons/PreviewTowerBridge.jpg)
+
+![PreviewWaterPlant](/icons/PreviewWaterPlant.jpg)
+
+- These above are all included in the .zip [here](https://suchmememanyskill.github.io/files/AllSuchMeme'sThemes.zip)
 
 [Back to main page](https://suchmememanyskill.github.io/)
