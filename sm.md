@@ -45,10 +45,10 @@ A = You put any .3dsx files in the `3ds` folder so hblauncher can see them
 Q = I see this steelhax installer in my homebrew launcher, should i install it?
 A = NO
 
-Some cool programs for hb only can be installed using my easy to use installer
+- Some cool programs for hb only can be installed using my easy to use installer
 [Download](https://github.com/suchmememanyskill/Sd-File-Installer/releases)
 
-A big addon onto this guide is Frogminer, which is free cfw. If you'd like to install cfw you can do so via frogminer [here](https://jisagi.github.io/FrogminerGuide/)
+- A big addon onto this guide is Frogminer, which is free cfw. If you'd like to install cfw you can do so via frogminer [here](https://jisagi.github.io/FrogminerGuide/)
 
 
 [Back to main page](https://suchmememanyskill.github.io/)
