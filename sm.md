@@ -4,7 +4,7 @@
 
 ### If the game boots normally
 
-You haven't actually placed the modified save or inproperly renamed it in the steeldiver data folder, the name of the .sav file should be *00000001.sav* , **and nothing else**
+You haven't actually placed the modified save in the steeldiver data folder, *or* inproperly renamed the save in the steeldiver data folder, the name of the .sav file should be *00000001.sav* , **and nothing else**
 
 ### If the game exits with an error message saying "an error occured, causing this app to forcibly close, the system will now restart"
 
