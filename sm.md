@@ -4,7 +4,7 @@
 
 ### If the game boots normally
 
-You haven't actually placed the modified save in the steeldiver data folder, *or* inproperly renamed the save in the steeldiver data folder, the name of the .sav file should be *00000001.sav* , **and nothing else**
+You haven't actually placed the modified save in the steeldiver data folder, *or* inproperly renamed the save in the steeldiver data folder, the name of the .sav file should be *00000001.sav* , **and nothing else**. (If you have trouble remembering the path where the .sav file is supposed to go, it's in Nintendo 3DS > ID0 > ID1 > title > 00040000 > regionId > data, where regionid for EU is 000d7e00, US is 000d7d00)
 
 ### If the game exits with an error message saying "an error occured, causing this app to forcibly close, the system will now restart"
 
@@ -29,6 +29,7 @@ You can use the following:
 - PKSM, a 3ds pokemon savegame editor
 
 Things you **can't** do:
+- Update your system without possibly losing access to homebrew
 - Install FBI
 - Mod games
 - Install cheats to games
@@ -46,6 +47,8 @@ A = NO
 
 Some cool programs for hb only can be installed using my easy to use installer
 [Download](https://github.com/suchmememanyskill/Sd-File-Installer/releases)
+
+A big addon onto this guide is Frogminer, which is free cfw. If you'd like to install cfw you can do so via frogminer [here](https://jisagi.github.io/FrogminerGuide/)
 
 
 [Back to main page](https://suchmememanyskill.github.io/)
