@@ -10,6 +10,8 @@
 3. Put the **0100000000001000** folder in Atmosphere/titles from the theme you like
 4. Launch Atmosphere with layeredfs, and you should boot up with a theme!
 
+Update: custom layouts are a thing now as well, if you want to make your own [visit ths site](https://github.com/suchmememanyskill/SwitchLayoutGuide/wiki)
+
 ## My themes:
 
 ![PreviewCastle](/icons/PreviewCastle.jpg)
