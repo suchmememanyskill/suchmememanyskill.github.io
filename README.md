@@ -5,10 +5,10 @@
 ## Guides
 
 [![steelminer](/icons/steelminer.png)](https://suchmememanyskill.github.io/sm)
-- Guide if steelminer refuses to work, and a general FAQ for hb only
+- Guide if steelminer refuses to work, and a general FAQ for hb only.
 
 [![SwitchThemes](/icons/SwitchThemeLogo.png)](https://github.com/suchmememanyskill/SwitchThemeGuide/wiki)
-- Guide for installing a switch theme with layeredfs
+- Guide for installing a switch theme with layeredfs.
 
 ## Programs
 
