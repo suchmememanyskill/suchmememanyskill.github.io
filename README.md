@@ -8,7 +8,7 @@
 - Guide if steelminer refuses to work, and a general FAQ for hb only.
 
 [![SwitchThemes](/icons/SwitchThemeLogo.png)](https://suchmememanyskill.github.io/SThemes)
-- Guide for installing a switch theme with layeredfs.
+- Guide for making and installing a switch theme with layeredfs.
 
 ## Programs
 
