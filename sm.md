@@ -1,3 +1,7 @@
+![retard alert](https://suchmememanyskill.github.io/Screenshot_20181218-120512_Discord.jpg)
+
+
+
 ## Steelminer Issues FAQ
 
 ## Section 1: Errors while installing homebrew via steelminer
