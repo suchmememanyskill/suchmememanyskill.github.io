@@ -25,8 +25,8 @@ This guide requires windows apps to work.
 3. Navigate to `Dump NCA` and press + to dump the home nca.
 4. Turn your switch off and put the sd card back into the pc.
 5. Unzip `ReleaseV3.4.zip` 
-5. Launch the `SwitchThemes.exe` app, navigate to `extract NCA`. Select your keyset file from your pc and the `themes/systemData` folder on your sd card.
-6. All .szs files required for theming are now located in `themes/systemData` on your sd card. Copy them to your pc if you want to make themes manually later on.
+6. Launch the `SwitchThemes.exe` app, navigate to `extract NCA`. Select your keyset file from your pc and the `themes/systemData` folder on your sd card.
+7. All .szs files required for theming are now located in `themes/systemData` on your sd card. Copy them to your pc if you want to make themes manually later on.
 
 ## Making a theme
 
