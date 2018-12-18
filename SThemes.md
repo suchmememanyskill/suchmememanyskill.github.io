@@ -36,7 +36,7 @@ Only the lockscreen and homescreen can be individually themed on <=5.1. The sett
 
 1. Open up the `SwitchThemes.exe` app. Navigate to `NXTheme Builder`.
 2. Select a Home menu part, A 720P image (very important!!) and a Layout patch. Click on `Build NXTheme` after selecting your home menu part, image and layout patch.
-3. Fill out the details in the window that pops up. If you're on 5.x, click the selection box as well if you're injecting the `home menu` home menu part. After filling out this window and clicking ok, you will get asked where to save the NXTheme file. Save this file in the `themes` folder on the sd card
+3. Fill out the details in the window that pops up. After filling out this window and clicking ok, you will get asked where to save the NXTheme file. Save this file in the `themes` folder on the sd card
 4. Repeat these steps for every home menu part of the switch you want to modify.
 	
 ## Installing a theme
