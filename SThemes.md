@@ -1,7 +1,7 @@
 # Home Menu Theming
 
 ### Console keys needed!
-You need your console keys dumped for this
+You need your console keys dumped for this. Check [lockpick](https://github.com/shchmue/Lockpick) out if you haven't dumped your keys already!
 	
 ### Windows only!
 This guide requires windows apps to work.
@@ -35,7 +35,7 @@ Note:
 Only the lockscreen and homescreen can be individually themed on <=5.1. The settings, news and all software home menu parts will have the same background as the homescreen.
 
 1. Open up the `SwitchThemes.exe` app. Navigate to `NXTheme Builder`.
-2. Select a Home menu part, A 720P image (very important!!) and a Layout patch. Click on `Build NXTheme` after selecting your home menu part, image and layout patch.
+2. Select a Home menu part, A 720P image and a Layout patch. Click on `Build NXTheme` after selecting your home menu part, image and layout patch.
 3. Fill out the details in the window that pops up. After filling out this window and clicking ok, you will get asked where to save the NXTheme file. Save this file in the `themes` folder on the sd card
 4. Repeat these steps for every home menu part of the switch you want to modify.
 	
