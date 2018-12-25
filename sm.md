@@ -1,4 +1,4 @@
-![retard alert](https://suchmememanyskill.github.io/Screenshot_20181218-120512_Discord.jpg)
+
 
 
 
@@ -20,6 +20,10 @@ You haven't actually placed the modified save in the steeldiver data folder, *or
 
 Your 3ds has trouble reading the *00000001.sav* file, please check if it's named correctly.
 If it is named correctly, you didn't use **your** movable.sed, which **are not universal**
+
+# If upon launching the game you get a black screen
+
+You probably are using an OLD payload on your NEW 3ds, redownload the payload for new instead
 
 ## Section 2: What can i do with HB only
 
