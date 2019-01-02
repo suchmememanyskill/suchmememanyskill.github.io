@@ -32,9 +32,11 @@ If it is named correctly, you didn't use **your** `movable.sed`, which **are not
 
 ### If upon launching the game you get a yellow screen
 
+- This is just a random crash; reboot and try opening the game again. It can take a few tries
+
 ### If upon launching the game you get a screen saying "An exception occured"
 
-
+- 
 
 ## Section 2: What can i do with HB only
 
