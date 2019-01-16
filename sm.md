@@ -50,12 +50,12 @@
 
 You can use the following:
 - Anemone3ds, A 3ds theming tool
-- JKSM, A 3ds save manager
+- [JKSM](http://steelminer.jisagi.net/files/JKSM.zip), A 3ds save manager
 - Playcoin setter, Set your playcoins to 300
-- GYTB, A custom badge installer
-- Emulators, Like snes9x, mgba, GameYob and VirtualNES. Note: Most emulators will be **very** unstable with homebrew only.
-- FTPD, A way to wirelessly transfer files to your 3ds
-- PKSM, a 3ds pokemon savegame editor
+- [GYTB](https://www.dropbox.com/s/6dztbbwuyno173t/GYTB.zip?dl=1), A custom badge installer
+- Emulators, like [snes9x](https://github.com/bubble2k16/snes9x_3ds/releases), [mgba](https://github.com/mgba-emu/mgba/releases), [GameYob](http://steelminer.jisagi.net/files/GameYob.zip) and [VirtuaNES](http://steelminer.jisagi.net/files/VirtuaNES.zip). Note: Most emulators will be **very** unstable with homebrew only.
+- [FTPD](https://github.com/mtheall/ftpd/releases), A way to wirelessly transfer files to your 3ds
+- [An older version of PKSM](https://github.com/FlagBrew/PKSM/releases/download/5.1.4/PKSM.zip), a 3ds pokemon savegame editor (put the `hax` folder in your `3ds` folder to install)
 
 Things you **can't** do:
 - Update your system without possibly losing access to homebrew
