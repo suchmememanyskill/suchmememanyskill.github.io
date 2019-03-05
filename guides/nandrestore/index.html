@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="../../img/favicon.ico">
+
+    
+    <title>Switch Nand Restore Guide - Such Meme, Many Skill's Dumping Ground</title>
+    
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+    <link href="../../css/highlight.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.28/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="../..">Such Meme, Many Skill's Dumping Ground</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../steelminer/">Steelminer Issues</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://nh-server.github.io/switch-guide/extras/theming/">Switch Theming Guide (external site)</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Switch Nand Restore Guide</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../apps/CubeAdventure/">CubeAdventure - Game by me</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../Themes/General_Theme_Sites/">General Theme Sites</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Themes/3ds_Themes/">My 3ds Themes</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Themes/Switch_Themes/">My Switch Themes</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../about/">About</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../steelminer/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../apps/CubeAdventure/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#restore-a-nand-backup-to-the-switch">Restore a nand backup to the switch</a></li>
+            <li class="second-level"><a href="#what-you-need">What you need:</a></li>
+                
+            <li class="second-level"><a href="#instructions">Instructions:</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="restore-a-nand-backup-to-the-switch">Restore a nand backup to the switch</h2>
+<div class="admonition danger">
+<p class="admonition-title">Warning:</p>
+<p>This will reset all of your saves, games, system version and other system settings back to a point when you made the the nand backup. Keep this in mind, as you probably don't have to restore a nand backup unless you have bricked or want to go back online safely after using cfw.</p>
+</div>
+<h3 id="what-you-need">What you need:</h3>
+<ul>
+<li>Your <code>Rawnand.bin</code></li>
+<li>Your <code>BOOT0</code> and <code>BOOT1</code><ul>
+<li>If you're missing any of the files above, ask for further help in the <a href="https://discord.gg/C29hYvh">Nintendo Homebrew</a> Discord server.</li>
+</ul>
+</li>
+<li>The <a href="https://github.com/CTCaer/hekate/releases/">Hekate</a> Payload</li>
+<li>An microSD card larger than 32gb formatted in exFat</li>
+</ul>
+<h3 id="instructions">Instructions:</h3>
+<p>Before we start, check if you have a row of folders called <code>Tools &gt; Backup &gt; Backup eMMC BOOT0/1</code></p>
+<div class="admonition warning">
+<p class="admonition-title">If you don't see a backup or [8 Character NAND id] folder on your sd card:</p>
+<ol>
+<li>Launch the latest hekate payload on your switch.</li>
+<li>Navigate to <code>Tools &gt; Backup &gt; Backup eMMC BOOT0/1</code>, and press the power button to select the option.</li>
+<li>Wait for the process to complete. When it's completed, you now have a <code>backup/[8 Character NAND id]/restore</code> folder on your sd card. Continue with step 1 of the guide.</li>
+</ol>
+</div>
+<ol>
+<li>Copy your <code>Rawnand.bin</code>, <code>BOOT0</code>, and <code>BOOT1</code> to the <code>backup/[8 Character NAND id]/restore</code> folder on the sd card</li>
+<li>Put your sd card into your switch, and launch hekate.</li>
+<li>Navigate to <code>Tools &gt; Restore</code>. Select <code>Restore eMMC BOOT0/1</code>. Wait for this process to complete. After it finished, you can press power to return.</li>
+<li>Select <code>Restore eMMC RAW GPP</code>. This WILL take a very long time to complete. After it finished, you can press power to return.</li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">If you're downgrading using your nand backup</p>
+<p>If the MAJOR version you were on before you performed the nand restore is HIGHER than the nand backup itself, you have to enable autoRCM to not get stuck in a boot crash.
+Major versions include 1.0, 2.0, 3.0, 4.0, 4.1, 5.0, 6.0, 6.2, 7.0</p>
+<p>If you were in autorcm before you upgraded to a newer major version (and still were after the upgrade) you don't have to do this.</p>
+<ol>
+<li>In hekate's main menu, navigate to <code>Tools &gt; AutoRCM</code></li>
+<li>Enable AutoRCM</li>
+</ol>
+</div></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+
+        
+        
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '../..';
+    </script>
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>
