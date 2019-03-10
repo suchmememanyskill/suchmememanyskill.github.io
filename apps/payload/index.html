@@ -11,7 +11,7 @@
     <link rel="../../img/favicon.ico">
 
     
-    <title>Installing AutoRCM - Such Meme, Many Skill's Dumping Ground</title>
+    <title>Payload Launcher - Such Meme, Many Skill's Dumping Ground</title>
     
 
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -93,13 +93,13 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../steelminer/">3DS Steelminer Issues</a>
+    <a href="../../guides/steelminer/">3DS Steelminer Issues</a>
 </li>
 
                         
@@ -111,13 +111,13 @@
                         
                             
 <li >
-    <a href="../nandrestore/">Switch Nand Restore Guide</a>
+    <a href="../../guides/nandrestore/">Switch Nand Restore Guide</a>
 </li>
 
                         
                             
-<li class="active">
-    <a href="./">Installing AutoRCM</a>
+<li >
+    <a href="../../guides/autorcm/">Installing AutoRCM</a>
 </li>
 
                         
@@ -126,25 +126,25 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apps <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../../apps/CubeAdventure/">CubeAdventure - Game by me</a>
+    <a href="../CubeAdventure/">CubeAdventure - Game by me</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../apps/themebatscript/">Switch Theme Bat Script</a>
+    <a href="../themebatscript/">Switch Theme Bat Script</a>
 </li>
 
                         
                             
-<li >
-    <a href="../../apps/payload/">Payload Launcher</a>
+<li class="active">
+    <a href="./">Payload Launcher</a>
 </li>
 
                         
@@ -194,12 +194,12 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../nandrestore/">
+                        <a rel="next" href="../themebatscript/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../apps/CubeAdventure/">
+                        <a rel="prev" href="../../Themes/General_Theme_Sites/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
@@ -213,48 +213,21 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#autorcm">AutoRCM</a></li>
+        <li class="first-level active"><a href="#payload-launcher-switch">Payload Launcher (switch)</a></li>
+            <li class="second-level"><a href="#how-to-use">How to use:</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h2 id="autorcm">AutoRCM</h2>
-<div class="admonition tip">
-<p class="admonition-title">What is autoRCM</p>
-<p>AutoRCM is a controlled brick, bricking a part of the boot0/1 to make the console believe it's bricked and boot straight to RCM (recovery mode). This means that if you're not careful around autoRCM, you can end up <strong>damaging</strong> your console. Please take care when using autoRCM.</p>
-<p>Note: Before you freak out if the switch's screen stays black when you power on your switch after activating autoRCM, it's not bricked. it's in RCM.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">If you don't have a boot0/1 backup yet...</p>
-<p>You really want to kill your console huh? If you haven't made a boot0/1 backup yet, I'd recommend making one <strong>right now</strong>.</p>
+<h2 id="payload-launcher-switch">Payload Launcher (switch)</h2>
+<p>This app launches payloads via the atmosphere reboot_to_payload system.</p>
+<h3 id="how-to-use">How to use:</h3>
 <ol>
-<li>Boot Hekate.</li>
-<li>Go to <code>Tools &gt; Backup</code>, and select <code>Backup eMMC BOOT0/1</code>.</li>
+<li>Drop the .nro file in the switch folder</li>
+<li>Create a folder called payloads on the root on the sd card and place your payload.bin files in there</li>
 </ol>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">Disadvantages of autoRCM</p>
-<p>There are a couple of disadvantages you should consider before installing autoRCM:</p>
-<ul>
-<li>Your switch will not boot normally with autoRCM installed</li>
-<li>When completely discharged, your switch will take a very long time to charge while in RCM. This means you'll be waiting around an hour or two for the battery to fully recharge to even boot your console again</li>
-</ul>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Advantages of autoRCM</p>
-<p>AutoRCM can be used for good as well:</p>
-<ul>
-<li>If you were having trouble getting into RCM before, because for example you're using the tinfoil method, now you can get into RCM every time</li>
-<li>If you want to keep fuses unburned, you can do so with autoRCM, as the switch never gets the change to burn them after updating when using autoRCM</li>
-<li>Easier to inject a payload using a payload injector</li>
-</ul>
-</div>
-<p>If, despite all of the warnings above, you still want to install autorcm, and understand the risks, do the following:</p>
-<ol>
-<li>Boot Hekate.</li>
-<li>Go to <code>Tools &gt; AutoRCM</code>.</li>
-<li>Enable AutoRCM.</li>
-</ol></div>
+<p><a href="https://github.com/suchmememanyskill/Payload_Launcher">Source</a> - <a href="https://github.com/suchmememanyskill/Payload_Launcher/releases">Download</a></p></div>
         
         
     </div>
