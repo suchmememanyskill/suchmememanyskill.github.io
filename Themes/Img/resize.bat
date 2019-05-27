@@ -2,5 +2,6 @@
 @echo off
 set /p name=Name of image:
 echo Scaling %name%...
-magick convert "%name%" -resize 1280 "Done/%name%"
+move %name% Original
+magick convert "Original/%name%" -resize 1280 "%name%"
 goto begin
