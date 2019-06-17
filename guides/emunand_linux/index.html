@@ -244,24 +244,26 @@
 <p>By PhazonicRidley</p>
 <div class="admonition danger">
 <p class="admonition-title">Guide is not finished</p>
-<p>This guide is unfinished and may contain errors. Continue at your own risk! This guide is more as something you can hold onto while doing this. Report an errors in the guide to Such Meme, Many Skill#2921 or PhazonicRidley#1432 on discord.</p>
+<p>This guide is unfinished and may contain errors. Continue at your own risk! This guide is more as something you can hold onto while doing this. Report any errors in the guide to Such Meme, Many Skill#2921 or PhazonicRidley#1432 on Discord.</p>
 </div>
 <h2 id="what-you-need">What you need:</h2>
 <ul>
-<li>A micro sd card at least 64gb</li>
+<li>A micro SD card at least 64gb</li>
 <li>An unpatched switch</li>
 <li>A good amount of spare time</li>
-<li>A micro sd card adapter or a way to plug in a micro sd card to a computer</li>
+<li>A micro SD card adapter or a way to plug in a micro SD card to a computer</li>
 <li>Atmosphere 9.0 or later</li>
 </ul>
 <h2 id="instructions">Instructions:</h2>
 <h3 id="part-1-the-backup">Part 1: The Backup</h3>
-<div class="admonition tip">
+<ol>
+<li>Boot into hekate and make a boot0/1 and raw gpp backup, you can see the full instructions on how to do this <a href="https://nh-server.github.io/switch-guide/user_guide/making_essential_backups/">here</a></li>
+<li>Copy these backups to your PC.</li>
+<li>Combine the boot0, boot1, and the rawnand backup into a single file, the command to do this is <code>cat boot0.bin boot1.bin rawnand.bin &gt; emummc.bin</code></li>
+</ol>
+<div class="admonition note">
 <p class="admonition-title">If you have you have you nand back up in multiple parts</p>
-<p>You may either:
-1. Use the hekate combination script that can be found <a href="https://github.com/CTCaer/hekate/releases">here</a> and combind them into one.
-or
-2. You can run the above <code>cat</code> command but instead of <code>rawnand.bin</code> you would put each and ever nand backup part eg <code>rawnand.bin.00 rawnand.bin.01 rawnand.bin.02 &lt;etc&gt;</code></p>
+<p>You can run the above <code>cat</code> command but instead of <code>rawnand.bin</code> you would put each and ever nand backup part eg <code>rawnand.bin.00 rawnand.bin.01 rawnand.bin.02 &lt;etc&gt;</code></p>
 </div>
 <h3 id="part-2-the-formatting">Part 2: The Formatting</h3>
 <ol>
@@ -269,20 +271,16 @@ or
 <p>Check to make sure gparted is installed (should be with most distros). Open it, and then go to the top right corner and click the correct stoarge device</p>
 </li>
 <li>
-<p>Create 2 partitions, the last one needs to be 29.3GB in size, the first partition can be filled with the rest of the space with. Please make sure <em>both</em> partitions are fat32</p>
+<p>Create 2 partitions, the last one needs to be 29.3GB in size, the first partition can be filled with the rest of the space available. Please make sure <em>both</em> partitions are FAT32</p>
 </li>
 </ol>
 <h3 id="part-3-the-flashing">Part 3: The Flashing</h3>
 <ol>
 <li>
-<p>Open a terminal and type the following commands</p>
-<ul>
-<li><code>sudo -s</code></li>
-<li><code>lsblk</code></li>
-</ul>
+<p>Open a terminal and type <code>lsblk</code></p>
 </li>
 <li>
-<p>Locate your sd card in the list of storage devices
+<p>Locate your SD card in the list of storage devices
     <img alt="lsb" src="../Img/lsblk.png" /></p>
 </li>
 </ol>
@@ -292,14 +290,14 @@ or
 <p class="admonition-title">If the path to your emunand contains a space</p>
 <p>you would add a \ to indicate a space, ex <code>if=/home/ubuntu/My\ Folder/emummc.bin</code> alternitivly you may put that folder name in quotes.</p>
 </div>
-<p>Then locate the second, 32gb, partition of the sd card, this will your of. this will be shown as <code>of=/dev/sd*xY*/</code> replace <em>x</em> with the device letter, and <em>Y</em> with the partition number, eg <code>of=/dev/sdb2</code> or <code>of=dev/mmcblkp2</code>. <code>lsblk</code> will show you information about your storage devices.</p>
+<p>Then locate the second, 32GB, partition of the sd card, this will your of. this will be shown as <code>of=/dev/sd*xY*/</code> replace <em>x</em> with the device letter, and <em>Y</em> with the partition number, eg <code>of=/dev/sdb2</code> or <code>of=dev/mmcblkp2</code>. <code>lsblk</code> will show you information about your storage devices.</p>
 </div>
 <ol>
-<li>Now we do the actual flashing, run the command <code>dd if=/path/to/emummc.bin of=/dev/sd*xY*/ bs=512M status=progress</code></li>
+<li>Now we do the actual flashing, run the command <code>sudo dd if=/path/to/emummc.bin of=/dev/sd*xY*/ bs=512M status=progress</code></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This will take quite a while, if you forgot to add the <code>status=progress</code> flag the terminal wont show any output but rest assured, it is flashing</p>
+<p>This will take quite a while, if you forgot to add the <code>status=progress</code> flag the terminal will not show any output but rest assured, it is flashing</p>
 <p><img alt="dd" src="../Img/dd.png" /></p>
 </div>
 <h3 id="part-4-get-offset">Part 4: Get offset</h3>
@@ -324,7 +322,12 @@ emummc_sector = 0x(hex offset)
 
 <p>The hex offset is the hex value you obtained in part 4. this is at most 8 hex characters Replace "(hex offset)" with your obtained hex offset</p>
 <hr />
-<p>Now if you boot fusee-primary.bin, you'll instead boot into emunand. You'll see the new black and white atmosphere logo if you did it successfully.    </p></div>
+<p>Now if you boot fusee-primary.bin, you'll instead boot into emunand. You'll see the new black and white Atmosphere logo if you did it successfully.    </p>
+<hr />
+<h4 id="credits">Credits:</h4>
+<p>Thank you to SciresM, m4xw, hexkyz, and ctcaer for making emunand a reality!</p>
+<p>Thank you to Such Meme, Many Skill for hosting the guide and providing the orginal structure of the guide.</p>
+<p>Lastly thanks to everyone who helped with the creation of this guide.</p></div>
         
         
     </div>
