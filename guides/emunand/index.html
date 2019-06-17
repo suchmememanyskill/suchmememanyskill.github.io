@@ -245,18 +245,17 @@
 <li>a microsd card of at least 64gb</li>
 <li>an unpatched switch</li>
 <li>lots of spare time</li>
-<li>a linux live usb (i used ubuntu)</li>
 <li>Minitool partition wizard free (or any other decent partition manager)</li>
-<li>a seperate drive that's at least 32gb and formatted in ntfs</li>
 <li>atmosphere 0.9.0 or later</li>
+<li><a href="https://github.com/exelix11/MakeEmu/releases">MakeEmu</a></li>
 </ul>
 <h2 id="instructions">Instructions:</h2>
 <h3 id="part-1-the-backups">Part 1: The backups</h3>
 <ol>
 <li>Boot into hekate and make a boot0/1 and raw gpp backup</li>
-<li>Copy these backups to your pc</li>
-<li>Combine the boot0, boot1 and rawnand into one backup. You can do this by opening cmd, navigating to your folder with your backups, and typing <code>copy /b BOOT0 + BOOT1 + rawnand.bin emummc.bin</code>. If you have a split backup you can replace rawnand.bin in the command with <code>rawnand.bin.00 + rawnand.bin.01 + rawnand.bin.02 &lt;etc&gt;</code></li>
-<li>Copy the emummc.bin to a seperate drive (needs to be ntfs).</li>
+<li>Copy these backups to your pc into a folder</li>
+<li>If your backup files are split, combine them using the <a href="https://github.com/CTCaer/hekate/releases/download/v4.10.1/joiner_scripts_for_windows_linux_macos.zip">hekate combiner scripts</a></li>
+<li>Copy the MakeEmu.exe to the folder containing the nand backup + boot0/1 backup</li>
 </ol>
 <hr />
 <h3 id="part-2-the-formatting">Part 2: The formatting</h3>
@@ -264,54 +263,47 @@
 <li>Open Minitool and go to <code>Disk &amp; Partition Management</code></li>
 <li>Locate your sd card and partition it as follows:<ul>
 <li>Make 2 partitions</li>
-<li>The last partition needs to be 29.3GB in size, the first partition you can fill the rest of the space with</li>
+<li>The last partition needs to be 29.2GB in size, the first partition you can fill the rest of the space with</li>
 <li>Both partitions should be fat32</li>
+<li>Both partitions should be primary partitions</li>
 </ul>
 </li>
 </ol>
 <hr />
 <h3 id="part-3-the-flashing">Part 3: The flashing</h3>
 <ol>
-<li>Launch your linux live usb with both the external drive containing the emummc.bin file and the sd card plugged in.</li>
-<li>Open the terminal and run the following commands:<ul>
-<li><code>sudo -s</code></li>
-<li><code>lsblk</code></li>
+<li>Open cmd and navigate to the folder containing your nand backup</li>
+<li>Make sure your boot0 is called <code>BOOT0</code>, your boot1 is called <code>BOOT1</code> and your rawnand is called <code>rawnand.bin</code></li>
+<li>Find the drive letter for the 29.2 GB partition on your sd card</li>
+<li>Type the following into cmd: <code>MakeEmu BOOT0 BOOT1 rawnand.bin &lt;drive letter&gt;</code><ul>
+<li>Replace <code>&lt;drive letter&gt;</code> with your drive letter, followed by <code>:</code>, so for example <code>K:</code></li>
 </ul>
 </li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">You should see the following:</p>
-<p><img alt="lsb" src="../Img/lsblk.png" /></p>
-<p>My external drive is called My Passport, and my sd card here is the 29.3 GB partition (sdf2)</p>
-<p>My emummc file is located in the swtich folder of my external drive, so the input would be
-<code>if=/media/ubuntu/My\ Passport/Switch/emummc.bin</code> (the \ is there to escape the space character)</p>
-<p>My sd card's second partition is located at sdf2, so my out would be <code>of=/dev/sdf2</code></p>
-</div>
-<p><code>3</code>. Now run the following command: <code>dd if=(path to file like the example above) of=(path to 2nd partition of sd card like the example above)</code></p>
-<p>The terminal may appear frozen, but its in fact writing. leave this open.</p>
 <hr />
 <h3 id="part-4-get-offset">Part 4: Get offset</h3>
 <ol>
-<li>Boot into windows again, and connect your sd card. windows might throw an error that it can't be read. ignore this and press cancel!</li>
-<li>Open powershell and type <code>Get-Patition</code></li>
+<li>Unplug your sd card and plug it back in. Windows might throw an error that it can't be read. Ignore this and press cancel!</li>
+<li>Open powershell and type <code>Get-Partition</code></li>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">You should see the following:</p>
 <p><img alt="powershell" src="../Img/getpartition.png" /></p>
 </div>
-<p>Grab the offset of the 29.3 GB partition, divide it by 512, and run it trough a decimal to hex converter. You'll need this hex value later</p>
+<p>Grab the offset of the 29.2 GB partition, divide it by 512, and run it trough a decimal to hex converter. You'll need this hex value later</p>
 <hr />
 <h3 id="part-5-setup-ini">part 5: Setup ini</h3>
 <ol>
 <li>Create a folder on the root of the sd card called <code>emummc</code></li>
-<li>Create a file in the emummc folder called <code>emummc.ini</code>. Put the following in that ini:</li>
+<li>Create a file in the emummc folder called <code>emummc.ini</code>. Put the following into that ini:</li>
 </ol>
 <pre><code>[emummc]
 emummc_enabled = 1
 emummc_sector = 0x(hex offset)
 </code></pre>
 
-<p>The hex offset is the hex value you obtained in part 4. this is at most 8 hex characters</p>
+<p>The hex offset is the hex value you obtained in part 4. this is at most 8 hex characters
+Replace "(hex offset)" with your obtained hex offset</p>
 <hr />
 <p>Now if you boot fusee-primary.bin, you'll instead boot into emunand. You'll see the new black and white atmosphere logo if you did it successfully.</p></div>
         
