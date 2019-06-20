@@ -256,6 +256,10 @@
 </ul>
 <h2 id="instructions">Instructions:</h2>
 <h3 id="part-1-the-backups">Part 1: The backups</h3>
+<div class="admonition warning">
+<p class="admonition-title">Before you start:</p>
+<p>Make sure you've deleted all your wifi connections beforehand. It's not a good idea to connect to the internet in emunand. You can add the wifi networks back on sysnand after following this guide.</p>
+</div>
 <ol>
 <li>Boot into hekate and make a boot0/1 and raw gpp backup</li>
 <li>Copy these backups to your pc into a folder</li>
@@ -277,7 +281,7 @@
 <hr />
 <h3 id="part-3-the-flashing">Part 3: The flashing</h3>
 <ol>
-<li>Open cmd and navigate to the folder containing your nand backup</li>
+<li>Open an administrator command prompt and navigate to the folder containing your nand backup</li>
 <li>Make sure your boot0 is called <code>BOOT0</code>, your boot1 is called <code>BOOT1</code> and your rawnand is called <code>rawnand.bin</code></li>
 <li>Find the drive letter for the 29.2 GB partition on your sd card</li>
 <li>Type the following into cmd: <code>MakeEmu BOOT0 BOOT1 rawnand.bin &lt;drive letter&gt;</code><ul>
