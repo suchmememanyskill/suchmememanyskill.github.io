@@ -256,6 +256,10 @@
 </ul>
 <h2 id="instructions">Instructions:</h2>
 <h3 id="part-1-the-backup">Part 1: The Backup</h3>
+<div class="admonition warning">
+<p class="admonition-title">Before you start:</p>
+<p>Make sure you've deleted all your wifi connections on your switch beforehand. It's not a good idea to connect to the internet in emunand. You can add the wifi networks back on sysnand after following this guide.</p>
+</div>
 <ol>
 <li>Boot into hekate and make a boot0/1 and raw gpp backup, you can see the full instructions on how to do this <a href="https://nh-server.github.io/switch-guide/user_guide/making_essential_backups/">here</a></li>
 <li>Copy these backups to your PC.</li>
@@ -323,6 +327,7 @@ emummc_sector = 0x(hex offset)
 <p>The hex offset is the hex value you obtained in part 4. this is at most 8 hex characters Replace "(hex offset)" with your obtained hex offset</p>
 <hr />
 <p>Now if you boot fusee-primary.bin, you'll instead boot into emunand. You'll see the new black and white Atmosphere logo if you did it successfully.    </p>
+<p>Your emunand's Nintendo folder can be found in your <code>emummc</code> folder. It will be called something like <code>Nintendo_0000</code>.</p>
 <hr />
 <h4 id="credits">Credits:</h4>
 <p>Thank you to SciresM, m4xw, hexkyz, and ctcaer for making emunand a reality!</p>
