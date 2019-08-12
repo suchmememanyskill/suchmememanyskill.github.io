@@ -10,8 +10,10 @@ nav:
         - 'Switch Nand Restore Guide': 'guides/nandrestore.md'
         - 'Installing AutoRCM': 'guides/autorcm.md'
         - 'Switch Hackable Serial List': 'guides/switchserials.md'
-        - 'Emummc manual guide': 'guides/emunand.md'
-        - 'Emummc linux guide': 'guides/emunand_linux.md'
+        - 'Emummc manual Guide': 'guides/emunand.md'
+        - 'Emummc manual linux Guide': 'guides/emunand_linux.md'
+        - 'Switch Dump & Installing Guide': 'guides/switchdumpguide.md'
+        
     - Apps:
         - 'Switch Theme Bat Script': 'apps/themebatscript.md'
         - 'Payload Launcher': 'apps/payload.md'
