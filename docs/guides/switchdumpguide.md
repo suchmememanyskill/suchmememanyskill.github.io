@@ -10,9 +10,6 @@ This guide has been made and tested using goldleaf 0.8.0, nxdumptool 1.1.9 and G
 !!! warning "Remove all your wifi networks / set up 90dns on all your wifi networks"
 	Again, in preparation for this you need to remove all your wifi networks or set up 90dns on all your wifi networks. Do this now. To set up 90dns, [click here](https://gitlab.com/a/90dns#usage-on-switch)
 
-!!! note "Bugs with updates"
-	If you experience a bug while installing gamecart based updates, contact me via discord (`Such Meme, Many Skill#2921`). This is something that's not completely understood yet.
-
 -----
 
 # Cart dump guide 
@@ -41,7 +38,8 @@ This bit will get you the required files and programs for installing cart dumps
 	There is quite important information about ban risk up there.
 	Also, if you haven't removed your wifi networks/set up [90dns](https://gitlab.com/a/90dns#usage-on-switch) yet, do so now
 
-### Instructions
+**Don't forget to boot into EmuMMC if you haven't done so already!!**
+
 1. Open the Homebrew Menu and open Gamecard Installer NX
 2. Press X to go into settings, and turn `Lower Keygen Version` ON, then exit out of the options menu
 3. Select `SD Card Install` (or `Nand Install` if you're out of SD space), Then press A to confirm
