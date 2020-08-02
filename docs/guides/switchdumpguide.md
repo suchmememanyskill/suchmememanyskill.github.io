@@ -12,9 +12,9 @@ This guide has been made and tested using goldleaf 0.8.0, nxdumptool 1.1.9 and G
 
 -----
 
-# Cart dump guide 
+# Cart install guide 
 
-## Step 1: Preperations
+## Step 1: Preparations
 This bit will get you the required files and programs for installing cart dumps
 
 ### What you need
