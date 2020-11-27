@@ -10,6 +10,9 @@ This guide has been made and tested using goldleaf 0.8.0, nxdumptool 1.1.9 and G
 !!! warning "Remove all your wifi networks / set up 90dns on all your wifi networks"
 	Again, in preparation for this you need to remove all your wifi networks or set up 90dns on all your wifi networks. Do this now. To set up 90dns, [click here](https://gitlab.com/a/90dns#usage-on-switch)
 
+!!! note "How to update your patches"
+	If you're just here to update your patches, you'll need to put the <a href="../Img/patches.ini" download>patches.ini from here</a> into the bootloader folder, replacing when asked. You may also need to replace the <a href="../Img/hekate_ipl.ini" download>hekate_ipl.ini</a> in the bootloader folder as well.
+
 -----
 
 # Cart install guide 
