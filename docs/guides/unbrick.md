@@ -44,7 +44,7 @@
 ## MMC Rebuild
 
 ### Step 0: Making a nand backup
-You probably want to make a nand backup before you start modifying your switch. Boot into [Hekate](https://github.com/CTCaer/hekate/releases), Go to tools, Backup eMMC, amd backup both `eMMC BOOT0 & BOOT1` and `eMMC RAW GPP`
+You probably want to make a nand backup before you start modifying your switch. Boot into [Hekate](https://github.com/CTCaer/hekate/releases), Go to tools, Backup eMMC, and backup both `eMMC BOOT0 & BOOT1` and `eMMC RAW GPP`
 
 ### Step 1: Getting the files
 
