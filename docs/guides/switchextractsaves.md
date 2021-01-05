@@ -4,14 +4,19 @@
 
 ### What you need:
 - The latest release of [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer/releases)
-- <a href="https://suchmememanyskill.github.io/TegraScript/scripts/savedumper.te" download>savedumper.te</a>
 - A payload injector (Example: [TegraRcmGui](https://github.com/eliboa/TegraRcmGUI/releases))
 
 ### Instructions:
-1. Place `savedumper.te` somewhere on your sd card and insert your sd card into your switch afterwards
-2. Launch TegraExplorer via your chosen payload injector
-3. Navigate to `SD:/`, navigate to the `savedumper.te` script, select it, and select `Launch Script`. Follow the script file. When asked to pick between system and user saves, pick user. This will take a while
-4. Go back to the main menu. Navigate to `Unmount SD` and select it. Pull your sd card out of your switch and put it into your pc
+1. Launch TegraExplorer via your chosen payload injector
+2. Navigate to `Browse EMMC` or `Browse EMUMMC`, depending on your needs
+3. Navigate to `USER`
+4. Navigate to `save`
+5. Navigate to `Current folder options`
+6. Select `Copy to clipboard`
+7. Back out to the main menu
+8. Go to `Browse SD`
+9. Press `Clipboard -> Current folder`
+10. The `save` folder is now located on the root of the sd
 
 ## Step 2: Extracting the saves
 These saves aren't done yet! these are still packed up.
