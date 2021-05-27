@@ -76,9 +76,7 @@
 
             <!-- Main title -->
 
-            
-              <a class="navbar-brand" href="../..">Such Meme, Many Skill's Dumping Ground</a>
-            
+            <a class="navbar-brand" href="../..">Such Meme, Many Skill's Dumping Ground</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -357,9 +355,10 @@ Also, if you haven't removed your wifi networks/set up <a href="https://gitlab.c
 <li>Wait til the app finishes installing the game, then exit to the home menu. </li>
 </ol>
 <p>Take out your card and you'll find that your cart is now installed to the system. You're done!</p>
+<p>If your game needs an update that is installed on your nand, you can continue with the Digital Dump Guide.</p>
 <h1 id="digital-dump-guide">Digital Dump Guide</h1>
 <h2 id="step-1-preparations_1">Step 1: Preparations</h2>
-<p>This bit will get you the required files and programs for installing cart dumps</p>
+<p>This bit will get you the required files and programs for installing digital dumps</p>
 <h3 id="what-you-need_1">What you need</h3>
 <ul>
 <li><a href="https://github.com/XorTroll/Goldleaf/releases">The .nro version of GoldLeaf</a></li>
@@ -385,8 +384,12 @@ Also, if you haven't removed your wifi networks/set up <a href="https://gitlab.c
 <ol>
 <li>Launch into Sys CFW via hekate (or if the game you want to dump is on EmuMMC, launch EmuMMC cfw)</li>
 <li>Open the Homebrew Menu and open nxdumptool</li>
-<li>Select <code>Dump installed SD card / eMMC content</code>, then select the game you want to dump, then select <code>Nintendo Submission Package (NSP) dump</code></li>
-<li>Select <code>Dump base application NSP</code> (Redo  section if there's also an update to dump)</li>
+<li>Select <code>Dump installed SD card / eMMC content</code><ul>
+<li>Note: to dump an update for a gamecard game, press <code>Y</code> to access the orphan title list.</li>
+</ul>
+</li>
+<li>Select the game you want to dump, then select <code>Nintendo Submission Package (NSP) dump</code></li>
+<li>If prompted, select <code>Dump base application NSP</code> (Redo  section if there's also an update to dump)</li>
 <li>Turn the following options on: <code>Split output dump (FAT32 support)</code>, <code>Remove console specific data</code>, <code>Generate ticket-less dump</code> and <code>Change NPDM RSA key/sig in Program NCA</code>.</li>
 <li>Select <code>Start NSP dump process</code></li>
 <li>After this is done, either dump your game update too, or return to the homebrew menu by pressing + (Don't forget to reboot into EmuMMC!!)</li>
@@ -416,20 +419,16 @@ Also, if you haven't removed your wifi networks/set up <a href="https://gitlab.c
         
     </div>
 
-    
-      <footer class="col-md-12 text-center">
-          
-          
-            <hr>
-            <p>
-            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-            </p>
-          
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+        </p>
 
-          
-          
-      </footer>
-    
+        
+        
+    </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../../js/bootstrap-3.0.3.min.js"></script>
 
