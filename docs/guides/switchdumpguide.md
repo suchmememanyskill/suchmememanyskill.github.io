@@ -52,10 +52,12 @@ This bit will get you the required files and programs for installing cart dumps
 
 Take out your card and you'll find that your cart is now installed to the system. You're done!
 
+If your game needs an update that is installed on your nand, you can continue with the Digital Dump Guide.
+
 # Digital Dump Guide
 
 ## Step 1: Preparations 
-This bit will get you the required files and programs for installing cart dumps
+This bit will get you the required files and programs for installing digital dumps
 
 ### What you need
 - [The .nro version of GoldLeaf](https://github.com/XorTroll/Goldleaf/releases)
@@ -78,11 +80,13 @@ This bit will get you the required files and programs for installing cart dumps
 ### Instructions (Digital based dump)
 1. Launch into Sys CFW via hekate (or if the game you want to dump is on EmuMMC, launch EmuMMC cfw)
 2. Open the Homebrew Menu and open nxdumptool
-3. Select `Dump installed SD card / eMMC content`, then select the game you want to dump, then select `Nintendo Submission Package (NSP) dump`
-4. Select `Dump base application NSP` (Redo  section if there's also an update to dump)
-5. Turn the following options on: `Split output dump (FAT32 support)`, `Remove console specific data`, `Generate ticket-less dump` and `Change NPDM RSA key/sig in Program NCA`.
-6. Select `Start NSP dump process`
-7. After this is done, either dump your game update too, or return to the homebrew menu by pressing + (Don't forget to reboot into EmuMMC!!)
+3. Select `Dump installed SD card / eMMC content`
+	- Note: to dump an update for a gamecard game, press `Y` to access the orphan title list.
+4. Select the game you want to dump, then select `Nintendo Submission Package (NSP) dump`
+5. If prompted, select `Dump base application NSP` (Redo  section if there's also an update to dump)
+6. Turn the following options on: `Split output dump (FAT32 support)`, `Remove console specific data`, `Generate ticket-less dump` and `Change NPDM RSA key/sig in Program NCA`.
+7. Select `Start NSP dump process`
+8. After this is done, either dump your game update too, or return to the homebrew menu by pressing + (Don't forget to reboot into EmuMMC!!)
 
 Your game dump got dumped in the /nxdumptool/nsp folder
 
