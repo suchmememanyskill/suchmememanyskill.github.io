@@ -1,0 +1,110 @@
+<VERSION> "131"
+
+<PRINT> "Which MMC would you like to factory reset?"
+<PRINT> "Press Vol+ for SysMMC"
+$EMUMMC$ { <PRINT> "Press Vol- for EmuMMC" }
+<PRINT> "Press Power to exit"
+<PRINT> ""
+<PAUSE>
+
+$BTN_POWER$ { <EXIT> }
+$BTN_VOL-$ { $NOEMUMMC$ { <EXIT> }}
+
+$BTN_VOL+$ {
+    <PRINT> "Mounting SysMMC..."
+    <CON_MMC> "SYSMMC"
+}
+
+$BTN_VOL-$ {
+    <PRINT> "Mounting EmuMMC..."
+    <CON_MMC> "EMUMMC"
+}
+
+<MNT_MMC> "SYSTEM"
+<COLOR> "RED"
+
+<PRINT> "Are you sure you want to wipe everything?"
+<PRINT> "This includes:"
+<PRINT> "- Saves"
+<PRINT> "- Game Data"
+<PRINT> "- All other data on the system"
+<PRINT> ""
+<PRINT> "Use this only as a last resort!"
+<PRINT> ""
+
+<COLOR> "YELLOW"
+<WAIT> "10"
+<PRINT> "Press vol+ to continue"
+<PRINT> "Press vol- or power to exit"
+<PAUSE>
+
+$BTN_POWER$ { <EXIT> }
+$BTN_VOL-$ { <EXIT> }
+
+<PRINT> "Removing SYSTEM data..."
+
+<MKDIR> "sd:/tegraexplorer"
+<MKDIR> "sd:/tegraexplorer/essentialsavebackup"
+
+<COPY> "emmc:/save/8000000000000120" "sd:/tegraexplorer/essentialsavebackup/8000000000000120"
+
+$ERROR$ {
+    <PRINT> "Copy failed!"
+    <ERRPRINT>
+    <PAUSE>
+    <EXIT>
+}
+
+<COPY> "emmc:/save/80000000000000d1" "sd:/tegraexplorer/essentialsavebackup/80000000000000d1"
+
+$ERROR$ {
+    <PRINT> "Copy failed!"
+    <ERRPRINT>
+    <PAUSE>
+    <EXIT>
+}
+
+<COPY> "emmc:/save/8000000000000047" "sd:/tegraexplorer/essentialsavebackup/8000000000000047"
+
+<DEL-R> "emmc:/save"
+
+$ERROR$ {
+    <PRINT> "Deletion of emmc:/save failed!"
+    <ERRPRINT>
+    <PAUSE>
+    <EXIT>
+}
+
+<MKDIR> "emmc:/save"
+
+<COPY> "sd:/tegraexplorer/essentialsavebackup/8000000000000120" "emmc:/save/8000000000000120"
+<COPY> "sd:/tegraexplorer/essentialsavebackup/80000000000000d1" "emmc:/save/80000000000000d1"
+<COPY> "sd:/tegraexplorer/essentialsavebackup/8000000000000047" "emmc:/save/8000000000000047" 
+
+<PRINT> ""
+<PRINT> "Removing USER data..."
+<MNT_MMC> "USER"
+
+<DEL-R> "emmc:/Album"
+<MKDIR> "emmc:/Album"
+
+<DEL-R> "emmc:/Contents"
+<MKDIR> "emmc:/Contents"
+<MKDIR> "emmc:/Contents/placehld"
+<MKDIR> "emmc:/Contents/registered"
+
+<DEL-R> "emmc:/save"
+<MKDIR> "emmc:/save"
+
+<DEL-R> "emmc:/saveMeta"
+<MKDIR> "emmc:/saveMeta"
+
+<DEL-R> "emmc:/temp"
+<MKDIR> "emmc:/temp"
+
+<COLOR> "GREEN"
+<PRINT> ""
+<PRINT> ""
+<PRINT> "SUCCESS!"
+<PRINT> "Press any key to exit"
+<PAUSE>
