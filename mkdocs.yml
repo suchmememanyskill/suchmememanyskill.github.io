@@ -30,6 +30,7 @@ nav:
         - 'My Switch Themes': 'Themes/Switch_Themes.md'
     - About: about.md
     
+site_url: https://suchmememanyskill.github.io/
 google_analytics:
     - UA-135654881-1
     - auto
