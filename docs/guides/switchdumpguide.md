@@ -30,10 +30,10 @@ This part will get you the required files and programs for installing cart games
 
 ### Instructions
 1. Copy the contents of the Gamecard Installer NX zip to your sd.
-2. Copy your `prod.keys` file to your `switch` folder, if you ran lockpick_rcm it will likely already be in the `switch` folder.
+2. Copy your `prod.keys` file to your `switch` folder. If you ran lockpick_rcm it will likely already be in the `switch` folder.
 3. Copy (or replace) `patches.ini` to the `bootloader` folder on your sd card.
 4. Replace the `hekate_ipl.ini` from the `bootloader` folder with the one you just downloaded.
-	- Note: If you are not using the Hekate config from the nh guide, you can add `kip1patch=nosigchk` (and `kip1patch=noldrchk` if you're on firmware 10.0.0+) right underneath the line with `fss0=atmosphere/fusee-secondary.bin` instead of replacing your `hekate_ipl.ini` (be sure to add those lines in your EmuMMC entry).
+	- Note: If you are not using the Hekate config from the nh guide, you can add `kip1patch=nosigchk` (and `kip1patch=noldrchk` if you're on firmware 10.0.0+) right underneath the line starting with `fss0=` instead of replacing your `hekate_ipl.ini` (be sure to add those lines in your EmuMMC entry).
 	- Note: You need to be booting via Hekate for this to work (and specifically the entry where patches are applied), fusee-primary will not work.
 	- Note: If you copied these files while booted into the switch OS itself, you need to restart your switch for the changes to take effect.
 
