@@ -11,7 +11,7 @@ This guide has been made and tested using goldleaf 0.9.0, nxdumptool 1.1.14 and 
 	Again, in preparation for this you need to remove all your wifi networks or set up 90dns/dns.mitm. Do this now. To set up 90dns/dns.mitm, [click here](https://nh-server.github.io/switch-guide/extras/blocking_updates/).
 
 !!! note "How to update your patches"
-	Currently supports Atmosphere 0.19.5 and firmware 12.1.0
+	Currently supports Atmosphere 1.0.0 and firmware 12.1.0
 
 	If you're just here to update your patches, you'll need to put the <a href="../Img/patches.ini" download>patches.ini from here</a> into the bootloader folder, replacing when asked. You may also need to replace the <a href="../Img/hekate_ipl.ini" download>hekate_ipl.ini</a> in the bootloader folder as well.
 
