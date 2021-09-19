@@ -27,7 +27,7 @@ jobs:
       - name: Install python & dependencies
         run: |
           sudo apt update -y 
-          sudo apt install python-pip3 -y
+          sudo apt install python3-pip -y
           sudo pip install -r requirements.txt
         
       - name: Build docs
