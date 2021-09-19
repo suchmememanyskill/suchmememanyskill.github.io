@@ -76,7 +76,9 @@
 
             <!-- Main title -->
 
-            <a class="navbar-brand" href="../..">Such Meme, Many Skill's Dumping Ground</a>
+            
+              <a class="navbar-brand" href="../..">Such Meme, Many Skill's Dumping Ground</a>
+            
         </div>
 
         <!-- Expanded navigation -->
@@ -294,6 +296,7 @@
 <h1 id="emummc-emunand-manual-guide">Emummc (emunand) manual guide</h1>
 <p>This guide is written for Linux users</p>
 <p>By PhazonicRidley</p>
+<hr />
 <div class="admonition danger">
 <p class="admonition-title">Guide is not finished</p>
 <p>This guide is unfinished and may contain errors. Continue at your own risk! This guide is more as something you can hold onto while doing this. Report any errors in the guide to Such Meme, Many Skill#2921 or PhazonicRidley#1432 on Discord.</p>
@@ -339,9 +342,13 @@
 <p>Locate your SD card in the list of storage devices
     <img alt="lsb" src="../Img/lsblk.png" /></p>
 </li>
+<li>
+<p>Now we are going to use <code>dd</code> to flash your emunand to the second partition</p>
+</li>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">To flash with <code>dd</code> do the following first:</p>
+<p>Locate the path to your emunand backup (the file called <code>emummc.bin</code>) this will be your <code>if</code>, or <em>Input File</em> </p>
 <div class="admonition note">
 <p class="admonition-title">If the path to your emunand contains a space</p>
 <p>you would add a \ to indicate a space, ex <code>if=/home/ubuntu/My\ Folder/emummc.bin</code> alternitivly you may put that folder name in quotes.</p>
@@ -375,7 +382,6 @@
 emummc_enabled = 1
 emummc_sector = 0x(hex offset)
 </code></pre>
-
 <p>The hex offset is the hex value you obtained in part 4. this is at most 8 hex characters Replace "(hex offset)" with your obtained hex offset</p>
 <hr />
 <p>Now if you boot fusee-primary.bin, you'll instead boot into emunand. You'll see the new black and white Atmosphere logo if you did it successfully.    </p>
@@ -389,16 +395,20 @@ emummc_sector = 0x(hex offset)
         
     </div>
 
-    <footer class="col-md-12 text-center">
-        
-        <hr>
-        <p>
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-        </p>
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
 
-        
-        
-    </footer>
+          
+          
+      </footer>
+    
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../../js/bootstrap-3.0.3.min.js"></script>
 
