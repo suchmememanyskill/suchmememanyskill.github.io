@@ -31,4 +31,6 @@ jobs:
           sudo pip install -r requirements.txt
         
       - name: Build docs
-        run: mkdocs gh-deploy -b master
+        run: |
+          git fetch origin master:master
+          mkdocs gh-deploy -b master
