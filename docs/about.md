@@ -6,6 +6,6 @@ You might have seen me around in switch theming discords, or the nintendo homebr
 
 Other than that, i like to fuck around with code, enjoy my site.
 
-If you need to contact me for some reason, my discord id is `Such Meme, Many Skill#2921`
+If you need to contact me for some reason, my discord id is ['suchmememanyskill'](https://discord.com/users/249186838592487425)
 
 Github repo for the site is located [here](https://github.com/suchmememanyskill/suchmememanyskill.github.io)
