@@ -29,7 +29,7 @@ This bit will get you the required files and programs for installing cart dumps
 - <a href="../Img/patches.ini" download>Hekate patches</a>
 
 ### Instructions
-1. Copy the contents of the Gamecard Installer NX zip to your sd
+1. Copy `gamecard_installer.nro` to the `switch` folder on your sd
 2. Copy your prod.keys file to your switch folder, if you ran lockpick_rcm it will likely already be in the switch folder
 3. Copy (or replace) `patches.ini` to the bootloader folder on your sd card
 4. Replace the `hekate_ipl.ini` from the bootloader folder with the one you just downloaded
