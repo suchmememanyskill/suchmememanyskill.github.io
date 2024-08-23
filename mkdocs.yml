@@ -28,12 +28,10 @@ nav:
         - 'General Theme Sites': 'Themes/General_Theme_Sites.md'
         - 'My 3ds Themes': 'Themes/3ds_Themes.md'
         - 'My Switch Themes': 'Themes/Switch_Themes.md'
+    - Blog: blog/index.md
     - About: about.md
     
 site_url: https://suchmememanyskill.github.io/
-google_analytics:
-    - UA-135654881-1
-    - auto
 
 extra_css:
     - css/custom.css
