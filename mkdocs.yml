@@ -1,5 +1,8 @@
 site_name: Such Meme, Many Skill's Dumping Ground
-theme: cinder
+theme: 
+    name: cinder
+    custom_dir: overrides
+
 markdown_extensions:
   - admonition
 nav:
@@ -35,3 +38,6 @@ site_url: https://suchmememanyskill.github.io/
 
 extra_css:
     - css/custom.css
+
+extra_javascript:
+    - js/redirect.js
