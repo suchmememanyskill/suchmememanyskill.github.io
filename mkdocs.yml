@@ -1,15 +1,63 @@
 site_name: Such Meme, Many Skill's Dumping Ground
-theme: 
-    name: cinder
+theme:
+    logo: img/favicon.ico
+    favicon: img/favicon.ico
+    name: material
+    features:
+        - toc.integrate
+        - navigation.instant
+        - navigation.sections
+        - navigation.tracking
     custom_dir: overrides
+
+    palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: grey
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: grey
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    icon:
+        repo: fontawesome/brands/github
+        logo: fontawesome/solid/wrench
 
 markdown_extensions:
   - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+  - toc:
+      permalink: true
+      toc_depth: 3
+
 nav:
     - Home: index.md
     - Guides:
         - 'Old':
-            - 'Switch Theming Guide (external site)': 'https://nh-server.github.io/switch-guide/extras/theming/'
+            - 'Switch Theming Guide (external site)': 'https://switch.hacks.guide/homebrew/nxtheme-installer.html'
             - 'Switch Nand Restore Guide': 'guides/nandrestore.md'
             - 'Installing AutoRCM': 'guides/autorcm.md'
             - 'Switch Hackable Serial List': 'guides/switchserials.md'
