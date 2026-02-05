@@ -29,6 +29,8 @@
 ## **Types of boot errors**
 
 The tabs below contain *possible* fixes for "common" boot errors, these are **NOT** guaranteed to work on every console. Many issues can *look* the same but can have fundamentally different causes.
+    
+**Note:** The first 3 boot error tabs assume you *aren't* booting with a custom bootloader/Atmosphere in the first place. Please keep this in mind.
 
 === "Early-Boot Errors"
     
@@ -36,7 +38,7 @@ The tabs below contain *possible* fixes for "common" boot errors, these are **NO
     
     1. Check if you can boot stock (not OFW) via hekate's `Launch` menu.
         - If you can, you likely have `AutoRCM` enabled or you have an e-fuse mismatch on your hands. Update to the latest firmware via stock or sysCFW.
-    2. Restore a NAND backup if you have one.
+    2. [Restore a NAND backup](https://switch.hacks.guide/extras/nandrestore.html) if you have one.
     3. Follow everything from the [MMC Rebuild](#mmc-rebuild) section with the same firmware version as your current firmware version.
     4. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
 
@@ -48,7 +50,7 @@ The tabs below contain *possible* fixes for "common" boot errors, these are **NO
         - If you can boot stock but not sysCFW, you might be running too many sysmodules, try to disable some.
     2. Check if you have an exFAT formatted SD. If it's formatted as exFAT, format it to FAT32 using [this guide](https://wiki.hacks.guide/wiki/Formatting_an_SD_card).
     3. Check if your `SYSTEM` partition is mountable. This can be done via `Browse eMMC` > `SYSTEM` in [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer/releases)
-    4. Restore a NAND backup if you have one.
+    4. [Restore a NAND backup](https://switch.hacks.guide/extras/nandrestore.html) if you have one.
     5. Follow everything from the [MMC Rebuild](#mmc-rebuild) section.
     6. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
 
@@ -67,7 +69,7 @@ The tabs below contain *possible* fixes for "common" boot errors, these are **NO
         5. Navigate to `tegraexplorer` > `Dumps` > `PRODINFO`,
         6. Select `PRODINFO`, select `View hex`.
             - "Intact" PRODINFO starts with `CAL0` and contains your Switch serial number at offset `0x250`.
-    4. Restore a NAND Backup if you have one.
+    4. [Restore a NAND backup](https://switch.hacks.guide/extras/nandrestore.html) if you have one.
     5. Perform a [System Wipe](#system-wipe).
     6. Follow everything from the [MMC Rebuild](#mmc-rebuild) section.
     7. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
@@ -76,8 +78,9 @@ The tabs below contain *possible* fixes for "common" boot errors, these are **NO
 
     The instructions below are numbered based on level of 'severity' (**low** to **high**), please don't follow all of them if you have no reason to do so.
 
-    1. If you're booting via hekate/fusee, you'll get a TitleID/ProgramID for which program crashed. Check if this ID is in `sd:/atmosphere/contents`, and if it is, delete it.
-    2. Check if you can boot stock via hekate's `Launch` menu or OFW via `Reboot` > `OFW` from hekate's `Home` menu.
+    1. If your screen turns black after booting via hekate/fusee, check if you have a folder named `kips` in `sd:/atmosphere`. If you do, delete it.
+    2. If you get an Atmosphere error screen, you'll get a TitleID/ProgramID for which program crashed. Check if this ID is in `sd:/atmosphere/contents`, and if it is, delete it.
+    3. Check if you can boot stock via hekate's `Launch` menu or OFW via `Reboot` > `OFW` from hekate's `Home` menu.
     
         !!! info "If you can, follow the instructions below:"
             1. On your SD card, rename your `atmosphere` folder to `oldatmosphere`,
@@ -85,8 +88,8 @@ The tabs below contain *possible* fixes for "common" boot errors, these are **NO
             3. Copy the `hosts` folder from `oldatmosphere` to `atmosphere`,
             4. Copy the `automatic_backups` folder from `oldatmosphere` to `atmosphere`.
             
-    3. Perform a [System Wipe](#system-wipe)
-    4. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
+    4. [Make a NAND backup](#step-0-making-a-nand-backup) and perform a [System Wipe](#system-wipe)
+    5. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
 
 -----
     
