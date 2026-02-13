@@ -24,3 +24,13 @@
   padding-bottom: 0.2rem;
 }
 
+h3.has-subtitle {
+  margin-bottom: 0;
+}
+
+h3.has-subtitle + p > em:only-child {
+  display: block;
+  margin-top: -0.9em;
+  opacity: 0.6;
+  font-size: 0.9em;
+}

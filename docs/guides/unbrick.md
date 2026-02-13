@@ -9,14 +9,35 @@
     - Your games don't work,
     - You run into homebrew apps crashing,
     - You experience homebrew related crashes upon booting Atmosphere,
-    - A YouTube video guide or discord server told you to follow this guide. (With the exception being Discord servers like Nintendo Homebrew or ReSwitched.) 
+    - A YouTube video guide told you to follow this guide.
 
-    If you experience **ANY** of the above, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh) before doing anything and don't continue following this guide.
+    If you experience **ANY** of the above or need any assistance in general, including following this guide, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh) before doing anything and don't continue following this guide.
     
-    Please do **NOT** misuse this guide or any of the tools used within this guide (looking at you, sthetix and other YouTube video guide creators).
+    Please do **NOT** misuse this guide or any of the tools used within this guide. Additionally you should refrain from using tools like "NANDFix", "NANDFixPro" and "DowngradeFixer".
     
-    Finally; issues caused by hardware failure or hardware malfunction (in the case of modchip installation issues, for example) will **NOT** be fixed by following the steps below. Please do **NOT** follow this guide if you experience such issues.
+    Finally; boot issues caused by recently-installed modchip installations, general hardware failure or hardware malfunction will **NOT** be fixed by following the steps below. Please do **NOT** follow this guide if you experience such issues.
 
+    
+## **Before starting - SD Preparation**
+This section will make sure you've got a minimalistic CFW setup on a new, separate SD card. Following this section ensures that you don't run into any issues caused by improper configurations later.
+
+#### **What you need:**
+
+- The latest release of [hekate](https://github.com/CTCaer/hekate/releases) (`hekate_ctcaer_X.X.X.zip`)
+- The latest release of [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere/releases) (`atmosphere-X.XX.X-master-XXXXXXXXX+hbl-X.X.X+hbmenu-X.X.X.zip`)
+- The hekate config file: [hekate_ipl.ini](https://nintendohomebrew.com/assets/hekate_ipl.ini)
+- A separate microSD card (preferably 64GB+) formatted as FAT32. (To format it as FAT32, follow [this guide](https://wiki.hacks.guide/wiki/Formatting_an_SD_card).)
+
+#### **Instructions:**
+
+1. Extract the *contents* of the hekate `.zip` to the root of your SD card.
+2. Extract the *contents* of the Atmosphere `.zip` to the root of your SD card.
+3. Place the `hekate_ipl.ini` file in `sd:/bootloader`.
+
+Once you've done this, you may continue on with this guide.
+    
+-----
+    
 ## **Quick reference**
 - [My Switch seemingly does nothing when I try to boot it up normally](#early-boot-errors)
 - [My Switch shows the Nintendo and/or black and white atmosphere logo, then black screens](#mid-boot-errors)
@@ -29,82 +50,78 @@
 ## **Types of boot errors**
 
 The tabs below contain *possible* fixes for "common" boot errors, these are **NOT** guaranteed to work on every console. Many issues can *look* the same but can have fundamentally different causes.
+
+The instructions below are numbered based on level of 'severity' (**low** to **high**), please don't follow all of them if you have no reason to do so.
     
-**Note:** The first 3 boot error tabs assume you *aren't* booting with a custom bootloader/Atmosphere in the first place. Please keep this in mind.
+- **Note:** The first 3 boot error sections assume you *aren't* booting with a custom bootloader/Atmosphere in the first place. Please keep this in mind.
 
-=== "Early-Boot Errors"
+-----
+
+### **Early-boot errors** { .has-subtitle }
+*My Switch seemingly does nothing when I try to boot it up normally*
+
+1. Check if you can boot `Stock sysMMC` (not OFW) via hekate's `Launch` menu.
+    - If you can, you likely have [AutoRCM](https://switch.hacks.guide/extras/autorcm) enabled or you have an e-fuse mismatch on your hands. Update to the latest firmware via stock or sysCFW.
+2. [Restore a NAND backup](https://switch.hacks.guide/extras/nandrestore.html) if you have one.
+3. Follow everything from the [MMC Rebuild](#mmc-rebuild) section with the same firmware version as your current firmware version.
+4. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
+
+-----
+
+### **Mid-boot errors** { .has-subtitle }
+*My Switch shows the Nintendo and/or black and white atmosphere logo, then black screens*
     
-    The instructions below are numbered based on level of 'severity' (**low** to **high**), please don't follow all of them if you have no reason to do so.
-    
-    1. Check if you can boot stock (not OFW) via hekate's `Launch` menu.
-        - If you can, you likely have `AutoRCM` enabled or you have an e-fuse mismatch on your hands. Update to the latest firmware via stock or sysCFW.
-    2. [Restore a NAND backup](https://switch.hacks.guide/extras/nandrestore.html) if you have one.
-    3. Follow everything from the [MMC Rebuild](#mmc-rebuild) section with the same firmware version as your current firmware version.
-    4. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
+1. Check if you can boot stock (not OFW) via hekate's `Launch` menu.
+    - If you can boot stock but not sysCFW, you might be running too many sysmodules, try to disable some.
+2. Check if you have an exFAT formatted SD. If it's formatted as exFAT, format it to FAT32 using [this guide](https://wiki.hacks.guide/wiki/Formatting_an_SD_card).
+3. Check if your `SYSTEM` partition is mountable. This can be done via `Browse eMMC` > `SYSTEM` in [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer/releases)
+4. [Restore a NAND backup](https://switch.hacks.guide/extras/nandrestore.html) if you have one.
+5. Follow everything from the [MMC Rebuild](#mmc-rebuild) section.
+6. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
 
-=== "Mid-Boot Errors"
+-----
 
-    The instructions below are numbered based on level of 'severity' (**low** to **high**), please don't follow all of them if you have no reason to do so.
-    
-    1. Check if you can boot stock (not OFW) via hekate's `Launch` menu.
-        - If you can boot stock but not sysCFW, you might be running too many sysmodules, try to disable some.
-    2. Check if you have an exFAT formatted SD. If it's formatted as exFAT, format it to FAT32 using [this guide](https://wiki.hacks.guide/wiki/Formatting_an_SD_card).
-    3. Check if your `SYSTEM` partition is mountable. This can be done via `Browse eMMC` > `SYSTEM` in [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer/releases)
-    4. [Restore a NAND backup](https://switch.hacks.guide/extras/nandrestore.html) if you have one.
-    5. Follow everything from the [MMC Rebuild](#mmc-rebuild) section.
-    6. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
+### **Late-boot errors** { .has-subtitle }
+*My Switch gets stuck at the Switch logo*
 
-=== "Late-Boot Errors"
+1. Check if you can boot stock (not OFW) via hekate's `Launch` menu.
+    - If you can boot stock but not sysCFW, you might be running too many sysmodules, try to disable some.
+2. Check if your `USER` partition is mountable. This can be done via `Browse eMMC` > `USER` in [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer/releases)
+3. Check if your `PRODINFO` is fine. To do this, follow the steps below:
+    1. Boot TegraExplorer,
+    2. Navigate to `Browse eMMC` > `PRODINFO`,
+    3. Select `PRODINFO` and dump it when prompted,
+    4. Go back to TegraExplorer's main menu and navigate to `Browse SD`,
+    5. Navigate to `tegraexplorer` > `Dumps` > `PRODINFO`,
+    6. Select `PRODINFO`, select `View hex`.
+        - "Intact" PRODINFO starts with `CAL0` and contains your Switch serial number at offset `0x250`. You should ensure that the serial number in the PRODINFO you're viewing matches the one on the bottom of your console (or underneath the kickstand on OLED consoles).
+4. [Restore a NAND backup](https://switch.hacks.guide/extras/nandrestore.html) if you have one.
+5. Perform a [System Wipe](#system-wipe).
+6. Follow everything from the [MMC Rebuild](#mmc-rebuild) section.
+7. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
 
-    The instructions below are numbered based on level of 'severity' (**low** to **high**), please don't follow all of them if you have no reason to do so.
-    
-    1. Check if you can boot stock (not OFW) via hekate's `Launch` menu.
-        - If you can boot stock but not sysCFW, you might be running too many sysmodules, try to disable some.
-    2. Check if your `USER` partition is mountable. This can be done via `Browse eMMC` > `USER` in [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer/releases)
-    3. Check if your `PRODINFO` is fine. To do this, follow the steps below:
-        1. Boot TegraExplorer,
-        2. Navigate to `Browse eMMC` > `PRODINFO`,
-        3. Select `PRODINFO` and dump it when prompted,
-        4. Go back to TegraExplorer's main menu and navigate to `Browse SD`,
-        5. Navigate to `tegraexplorer` > `Dumps` > `PRODINFO`,
-        6. Select `PRODINFO`, select `View hex`.
-            - "Intact" PRODINFO starts with `CAL0` and contains your Switch serial number at offset `0x250`.
-    4. [Restore a NAND backup](https://switch.hacks.guide/extras/nandrestore.html) if you have one.
-    5. Perform a [System Wipe](#system-wipe).
-    6. Follow everything from the [MMC Rebuild](#mmc-rebuild) section.
-    7. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
+-----
 
-=== "Boot Crashes"
+### **Boot crashes** { .has-subtitle }
+*My Switch crashes on boot*
 
-    The instructions below are numbered based on level of 'severity' (**low** to **high**), please don't follow all of them if you have no reason to do so.
-
-    1. If your screen turns black after booting via hekate/fusee, check if you have a folder named `kips` in `sd:/atmosphere`. If you do, delete it.
-    2. If you get an Atmosphere error screen, you'll get a TitleID/ProgramID for which program crashed. Check if this ID is in `sd:/atmosphere/contents`, and if it is, delete it.
-    3. Check if you can boot stock via hekate's `Launch` menu or OFW via `Reboot` > `OFW` from hekate's `Home` menu.
-    
-        !!! info "If you can, follow the instructions below:"
-            1. On your SD card, rename your `atmosphere` folder to `oldatmosphere`,
-            2. Extract the contents of the latest [Atmosphere release](https://github.com/Atmosphere-NX/Atmosphere/releases) (`atmosphere-X.XX.X-master-XXXXXXXXX+hbl-X.X.X+hbmenu-X.X.X.zip`) on your SD, replacing (merging, if on macOS) when asked,
-            3. Copy the `hosts` folder from `oldatmosphere` to `atmosphere`,
-            4. Copy the `automatic_backups` folder from `oldatmosphere` to `atmosphere`.
-            
-    4. [Make a NAND backup](#step-0-making-a-nand-backup) and perform a [System Wipe](#system-wipe)
-    5. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
+1. Check if you can boot `Stock sysMMC` via hekate's `Launch` menu or OFW via `Reboot` > `OFW` from hekate's `Home` menu.
+2. [Make a NAND backup](#step-0-making-a-nand-backup) and perform a [System Wipe](#system-wipe)
+3. If **NONE** of these steps worked, please ask for help in `#switch-assistance-1` or `#switch-assistance-2` in the [NH-Discord server](https://discord.gg/C29hYvh).
 
 -----
     
 ## **MMC Rebuild**
 
-An MMC Rebuild is an "advanced" procedure which involves generating system restoration files using the decryption keys of your Switch and your Switch firmware dump in combination with a tool called [EmmcHaccGen](https://github.com/suchmememanyskill/EmmcHaccGen), to (hopefully) restore your Switch back to a working state. Please keep in mind that following this section of the guide should **ONLY** be done if you have a valid reason to do so.
+An MMC Rebuild is an "advanced" procedure which involves generating system restoration files using the decryption keys of your Switch and your Switch firmware dump in combination with a tool called [EmmcHaccGen](https://github.com/suchmememanyskill/EmmcHaccGen), to (hopefully) restore your Switch back to a working state. Please keep in mind that following this section of the guide should **ONLY** be done if you have a valid reason to do so. 
+Doing otherwise may cause damage to your console (unable to play online after recovery), or data loss (save game loss). 
+
+**Note:** An MMC Rebuild is specifically meant to be used for restoring your sysmmc to a working state, *not* an emummc. You can simply recreate an emummc via hekate > `emuMMC` > `Create emuMMC` > `SD Partition` > `Part 1` if your sysmmc is functioning like normal.
 
 ### **Step 0: Making a NAND backup**
-You will want to make a NAND backup before you start modifying your Switch. To do so, follow the steps below.
-
-#### What you need:
-- The latest release of [hekate](https://github.com/CTCaer/hekate/releases) (`hekate_ctcaer_X.X.X.zip`)
+You will want to make a NAND backup before you start modifying your Switch. To do this, follow the steps below.
 
 #### Instructions:
-1. Extract the bootloader folder from the hekate .zip to the root of your SD card.
 2. Inject the hekate payload (`hekate_ctcaer_X.X.X.bin`) using your desired RCM payload injector.
     - **Note:** If you use a modchipped Switch, you can place the hekate payload on the root of your SD card, rename it to `payload.bin` and turn on your Switch.
 3. Go to `Tools` > `Backup eMMC` and back up `eMMC BOOT0 & BOOT1` & `eMMC RAW GPP`.
@@ -113,7 +130,21 @@ You will want to make a NAND backup before you start modifying your Switch. To d
 6. Access your SD card and back up the `backup` folder on the root of your SD card to your PC.
 7. Once done, safely eject the `hekate UMS` device from your PC, then navigate back to hekate's `Home` menu.
 
+-----
+
 ### **Step 1: Generating the files and copying them to your SD card**
+
+!!! note "Please verify which console model you have before continuing."
+
+    1. Navigate to `Console Info` > `HW & Fuses` in hekate.
+    2. At the top left, on the `SoC:` line, it will say one of the following:
+        -  `T210 (Erista)` to indicate an Erista (V1) console,
+        -  `T210B01 (Mariko)` to indicate a Mariko (V2) console.
+
+    **Note:** If you have an Erista (V1) console, please check if it says `This unit is exploitable to the RCM bug!` or `This unit is patched to the RCM bug!` in the bottom right. If it says `This unit is patched to the RCM bug!`, you have a patched Erista (V1) console.
+
+    Once you've determined which console model you have, you may continue.
+
 
 #### What you need:
 
@@ -187,6 +218,7 @@ You will want to make a NAND backup before you start modifying your Switch. To d
             3. You should now be able to double click the app to open it from Finder.
     
     2. Configure the sliders/toggles depending on your console model:
+    
         - **V1 Unpatched consoles:** *Enable* the `Enable AutoRCM` and, if applicable, the `ExFAT Support` toggles.
         - **V1 Patched consoles:** *Disable* the `Enable AutoRCM` toggle and, if applicable, *enable* the `ExFAT Support` toggle.
         - **V2/Mariko consoles:** *Enable* the `Generate Mariko Firmware` and, if applicable, the `ExFAT Support` toggles.

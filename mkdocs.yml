@@ -63,7 +63,6 @@ nav:
             - 'Switch Hackable Serial List': 'guides/switchserials.md'
             - 'Emummc manual Guide': 'guides/emunand.md'
             - 'Emummc manual linux Guide': 'guides/emunand_linux.md'
-            - 'Old Unbrick Guide': 'guides/unbrick_old.md'
         - 'Switch Dump & Installing Guide': 'guides/switchdumpguide.md'
         - 'SysMMC save extract': 'guides/switchextractsaves.md'
         - 'Switch Unbrick Guide': 'guides/unbrick.md'
