@@ -159,11 +159,11 @@ You will want to make a NAND backup before you start modifying your Switch. To d
 
     #### What you need:
 
-    - The latest release of [EmmcHaccGen-Extended](https://github.com/DefenderOfHyrule/EmmcHaccGen-Extended/releases) (`EmmcHaccGen-Extended-win-x64.GUI.exe`)
+    - The latest release of [EmmcHaccGen](https://github.com/suchmememanyskill/EmmcHaccGen/releases) (`EmmcHaccGen-win-x64.GUI.exe`)
     
     #### Instructions:
 
-    1. Open `EmmcHaccGen-Extended-win-x64.GUI.exe`, import your Switch's prod.keys and firmware folder.
+    1. Open `EmmcHaccGen-win-x64.GUI.exe`, import your Switch's prod.keys and firmware folder.
     2. Configure the sliders/toggles depending on your console model:
         - **V1 Unpatched consoles:** *Enable* the `Enable AutoRCM` and, if applicable, the `ExFAT Support` toggles.
         - **V1 Patched consoles:** *Disable* the `Enable AutoRCM` toggle and, if applicable, *enable* the `ExFAT Support` toggle.
@@ -178,16 +178,16 @@ You will want to make a NAND backup before you start modifying your Switch. To d
 
     #### What you need:
 
-    - The latest release of [EmmcHaccGen-Extended](https://github.com/DefenderOfHyrule/EmmcHaccGen-Extended/releases) (`EmmcHaccGen-Extended-linux-x64.GUI`)
+    - The latest release of [EmmcHaccGen](https://github.com/suchmememanyskill/EmmcHaccGen/releases) (`EmmcHaccGen-linux-x64.GUI`)
     
     #### Instructions:
 
-    1. Open `EmmcHaccGen-Extended-linux-x64.GUI`, import your Switch's prod.keys and firmware folder.
+    1. Open `EmmcHaccGen-linux-x64.GUI`, import your Switch's prod.keys and firmware folder.
     
-        !!! note "You *may* need to make the `EmmcHaccGen-Extended-linux-x64.GUI` file executable before being able to open it."
+        !!! note "You *may* need to make the `EmmcHaccGen-linux-x64.GUI` file executable before being able to open it."
             To do this, you can do one of the following: 
             
-            1. Use the terminal command: `chmod +x path/to/EmmcHaccGen-Extended-linux-x64.GUI` and then open it from your file manager or,
+            1. Use the terminal command: `chmod +x path/to/EmmcHaccGen-linux-x64.GUI` and then open it from your file manager or,
             2. On most (modern) Linux distributions you can right click the file from your desired file manager and enable `Executable as Program` or `Allow executing file as program` or something along those lines in the properties of the executable and open it from your file manager.
             
     2. Configure the sliders/toggles depending on your console model:
@@ -204,17 +204,17 @@ You will want to make a NAND backup before you start modifying your Switch. To d
 
     #### What you need:
 
-    - The latest release of [EmmcHaccGen-Extended](https://github.com/DefenderOfHyrule/EmmcHaccGen-Extended/releases) (`EmmcHaccGen-Extended-osx-x64-app.zip` or `EmmcHaccGen-Extended-osx-arm64-app.zip`)
+    - The latest release of [EmmcHaccGen](https://github.com/suchmememanyskill/EmmcHaccGen/releases) (`EmmcHaccGen-osx-x64-app.zip` or `EmmcHaccGen-osx-arm64-app.zip`)
     
     #### Instructions:
     
-    1. Extract the contents of the `EmmcHaccGen-Extended-osx-x64-app.zip` or `EmmcHaccGen-Extended-osx-arm64-app.zip` to a location on your mac, double click `EmmcHaccGen-Extended.app` to open the app and import your Switch's prod.keys and firmware folder.
+    1. Extract the contents of the `EmmcHaccGen-osx-x64-app.zip` or `EmmcHaccGen-osx-arm64-app.zip` to a location on your mac, double click `EmmcHaccGen.app` to open the app and import your Switch's prod.keys and firmware folder.
     
-        !!! note "You will need to 'trust' the `EmmcHaccGen-Extended.app` executable before being able to open it."
+        !!! note "You will need to 'trust' the `EmmcHaccGen.app` executable before being able to open it."
             To do this, you can do the following: 
             
             1. Open a terminal window.
-            2. Enter the following command: `xattr -dr com.apple.quarantine /path/to/EmmcHaccGen-Extended.app` (replacing `/path/to` with the actual path to the executable).
+            2. Enter the following command: `xattr -dr com.apple.quarantine /path/to/EmmcHaccGen.app` (replacing `/path/to` with the actual path to the executable).
             3. You should now be able to double click the app to open it from Finder.
     
     2. Configure the sliders/toggles depending on your console model:
