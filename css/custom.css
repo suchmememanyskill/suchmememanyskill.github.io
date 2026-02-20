@@ -1,0 +1,36 @@
+.md-nav__item--section {
+  margin-bottom: 0.5rem;
+}
+
+.md-nav__item--section > .md-nav__link {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.md-nav__item .md-nav__item {
+  padding-left: 0.75rem;
+}
+
+.md-nav__link {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.md-nav__item--section > .md-nav__link {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.2rem;
+}
+
+h3.has-subtitle {
+  margin-bottom: 0;
+}
+
+h3.has-subtitle + p > em:only-child {
+  display: block;
+  margin-top: -0.9em;
+  opacity: 0.6;
+  font-size: 0.9em;
+}

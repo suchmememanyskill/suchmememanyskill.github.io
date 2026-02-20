@@ -1,496 +1,1632 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://suchmememanyskill.github.io/guides/unbrick/">
+      
+      
+        <link rel="prev" href="../switchextractsaves/">
+      
+      
+        <link rel="next" href="../../apps/themebatscript/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
-    <link rel="canonical" href="https://suchmememanyskill.github.io/guides/unbrick/">
-    <link rel="shortcut icon" href="../../img/favicon.ico">
+      
+        <title>Switch Unbrick Guide - Such Meme, Many Skill's Dumping Ground</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
 
     
-    <title>Switch Unbrick Guide - Such Meme, Many Skill's Dumping Ground</title>
     
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="../../css/base.min.css" rel="stylesheet">
-    <link href="../../css/cinder.min.css" rel="stylesheet">
-
+      
     
+    
+      
         
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
         
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
     
-    <link href="../../css/custom.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-        <![endif]-->
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
     
-
-     
-</head>
-
-<body>
-
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-
-            <!-- Main title -->
-
-            
-              <a class="navbar-brand" href="../..">Such Meme, Many Skill's Dumping Ground</a>
-            
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                
-                
-                    <li >
-                        <a href="../..">Home</a>
-                    </li>
-                
-                
-                
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Old</a>
-    <ul class="dropdown-menu">
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
         
-            
-<li >
-    <a href="https://nh-server.github.io/switch-guide/extras/theming/">Switch Theming Guide (external site)</a>
-</li>
-
-        
-            
-<li >
-    <a href="../nandrestore/">Switch Nand Restore Guide</a>
-</li>
-
-        
-            
-<li >
-    <a href="../autorcm/">Installing AutoRCM</a>
-</li>
-
-        
-            
-<li >
-    <a href="../switchserials/">Switch Hackable Serial List</a>
-</li>
-
-        
-            
-<li >
-    <a href="../emunand/">Emummc manual Guide</a>
-</li>
-
-        
-            
-<li >
-    <a href="../emunand_linux/">Emummc manual linux Guide</a>
-</li>
-
-        
-            
-<li >
-    <a href="../unbrick_old/">Old Unbrick Guide</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                            
-<li >
-    <a href="../switchdumpguide/">Switch Dump & Installing Guide</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../switchextractsaves/">SysMMC save extract</a>
-</li>
-
-                        
-                            
-<li class="active">
-    <a href="./">Switch Unbrick Guide</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apps <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Old</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../apps/themebatscript/">Switch Theme Bat Script</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../apps/CubeAdventure/">CubeAdventure - Game by me</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                            
-<li >
-    <a href="../../apps/payload/">Payload Launcher</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../apps/TegraExplorer/">TegraExplorer</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../apps/emmchaccgen/">EmmcHaccGen</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../Themes/General_Theme_Sites/">General Theme Sites</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../Themes/3ds_Themes/">My 3ds Themes</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../Themes/Switch_Themes/">My Switch Themes</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../../blog/">Blog</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../../about/">About</a>
-                    </li>
-                
-                
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../switchextractsaves/">
-                            <i class="fas fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="next" href="../../apps/themebatscript/">
-                            Next <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </li>
-            </ul>
-        </div>
+        <a href="#switch-unbrick-guide" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Such Meme, Many Skill&#39;s Dumping Ground" class="md-header__button md-logo" aria-label="Such Meme, Many Skill's Dumping Ground" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Such Meme, Many Skill's Dumping Ground
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Switch Unbrick Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
 
-    <div class="container">
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Such Meme, Many Skill&#39;s Dumping Ground" class="md-nav__button md-logo" aria-label="Such Meme, Many Skill's Dumping Ground" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    Such Meme, Many Skill's Dumping Ground
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
         
         
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#switch-unbrick-guide">Switch Unbrick Guide</a></li>
-            <li class="second-level"><a href="#quick-reference">Quick reference</a></li>
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
                 
-            <li class="second-level"><a href="#early-boot-errors">Early Boot Errors</a></li>
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Old
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Old
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
                 
-            <li class="second-level"><a href="#mid-boot-errors">Mid Boot Errors</a></li>
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://switch.hacks.guide/homebrew/nxtheme-installer.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Switch Theming Guide (external site)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
                 
-            <li class="second-level"><a href="#late-boot-errors">Late Boot Errors</a></li>
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nandrestore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Switch Nand Restore Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
                 
-            <li class="second-level"><a href="#boot-crashes">Boot Crashes</a></li>
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autorcm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installing AutoRCM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
                 
-            <li class="second-level"><a href="#mmc-rebuild">MMC Rebuild</a></li>
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../switchserials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Switch Hackable Serial List
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
                 
-                <li class="third-level"><a href="#step-0-making-a-nand-backup">Step 0: Making a nand backup</a></li>
-                <li class="third-level"><a href="#step-1-getting-the-files">Step 1: Getting the files</a></li>
-                <li class="third-level"><a href="#step-2-flashing-the-files">Step 2: Flashing the files</a></li>
-            <li class="second-level"><a href="#system-wipe">System Wipe</a></li>
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emunand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emummc manual Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
                 
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emunand_linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emummc manual linux Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../switchdumpguide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Switch Dump & Installing Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../switchextractsaves/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SysMMC save extract
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Switch Unbrick Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Switch Unbrick Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-starting-sd-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before starting - SD Preparation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-boot-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of boot errors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of boot errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#early-boot-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Early-boot errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mid-boot-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mid-boot errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#late-boot-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Late-boot errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boot-crashes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Boot crashes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mmc-rebuild" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MMC Rebuild
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MMC Rebuild">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-0-making-a-nand-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 0: Making a NAND backup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-generating-the-files-and-copying-them-to-your-sd-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Generating the files and copying them to your SD card
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-flashing-the-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Flashing the files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-wipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Wipe
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
-</div></div>
-        <div class="col-md-9" role="main">
+  
+</nav>
+      
+    </li>
+  
 
-<h1 id="switch-unbrick-guide">Switch Unbrick Guide</h1>
-<h2 id="quick-reference">Quick reference</h2>
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apps
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apps
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Old
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Old
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apps/themebatscript/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Switch Theme Bat Script
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apps/CubeAdventure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CubeAdventure - Game by me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apps/payload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Payload Launcher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apps/TegraExplorer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TegraExplorer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apps/emmchaccgen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EmmcHaccGen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Themes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Themes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Themes/General_Theme_Sites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Theme Sites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Themes/3ds_Themes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    My 3ds Themes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Themes/Switch_Themes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    My Switch Themes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="switch-unbrick-guide"><strong>Switch Unbrick Guide</strong><a class="headerlink" href="#switch-unbrick-guide" title="Permanent link">&para;</a></h1>
+<div class="admonition danger">
+<p class="admonition-title"><strong>READ THIS BEFORE CONTINUING</strong></p>
+<p>This guide isn't called an "unbrick guide" for no reason, it shouldn't be treated as a way out of simple inconveniences and should <strong>NOT</strong> be followed without proper reason to do so. A "brick" indicates that a device is dysfunctional on a soft- and/or hardware level. The term "software brick" means that something is messed up at the internal storage/operating system level, while "hardware brick" indicates that you experience hardware failure or hardware malfunction (causing the system to not boot properly, if at all).</p>
+<p>Reasons to <strong>NOT</strong> follow this guide include:</p>
 <ul>
-<li><a href="#early-boot-errors">My switch seemingly does nothing when i try to boot it up normally</a></li>
-<li><a href="#mid-boot-errors">My switch shows the Nintendo/blackwhite atmosphere logo, then blackscreens</a></li>
-<li><a href="#late-boot-errors">My switch gets stuck at the Switch logo</a></li>
-<li><a href="#boot-crashes">My switch crashes on boot</a></li>
-<li><a href="#mmc-rebuild">Last Resort: Full on MMC rebuild guide</a></li>
+<li>Your games don't work,</li>
+<li>You run into homebrew apps crashing,</li>
+<li>You experience homebrew related crashes upon booting Atmosphere,</li>
+<li>A YouTube video guide told you to follow this guide.</li>
 </ul>
-<h2 id="early-boot-errors">Early Boot Errors</h2>
-<ol>
-<li>Check if you can boot via RCM/Hekate<ul>
-<li>If you can, you likely have a fuse mismatch on your hands. Update to the latest firmware</li>
-</ul>
-</li>
-<li>Restore a Nand backup if you have one</li>
-<li>Follow everything from the <a href="#mmc-rebuild">MMC Rebuild</a> section with the same fw version as your current fw</li>
-</ol>
-<h2 id="mid-boot-errors">Mid Boot Errors</h2>
-<ol>
-<li>Check if you can boot via RCM/Hekate or stock<ul>
-<li>If you can boot stock but not cfw, you might be running too many sysmodules, try to disable some.</li>
-</ul>
-</li>
-<li>Check if you have an exFAT sd. If you have, format it to fat32 </li>
-<li>Check if your system partition is mountable. This can be done via <a href="https://github.com/suchmememanyskill/TegraExplorer/releases">TegraExplorer</a></li>
-<li>Restore a Nand backup if you have one</li>
-<li>Follow everything from the <a href="#mmc-rebuild">MMC Rebuild</a> section</li>
-</ol>
-<h2 id="late-boot-errors">Late Boot Errors</h2>
-<ol>
-<li>Check if you can boot via RCM/Hekate or stock<ul>
-<li>If you can boot stock but not cfw, you might be running too many sysmodules, try to disable some.</li>
-</ul>
-</li>
-<li>Check if your USER partition is mountable. This can be done via <a href="https://github.com/suchmememanyskill/TegraExplorer/releases">TegraExplorer</a></li>
-<li>Check if your PRODINFO is fine. Decrypted prodinfo's start with <code>CAL0</code> in a hex editor</li>
-<li>Restore a Nand Backup if you have one</li>
-<li>Perform a <a href="#system-wipe">System Wipe</a></li>
-<li>Follow everything from the <a href="#mmc-rebuild">MMC Rebuild</a> section</li>
-</ol>
-<h2 id="boot-crashes">Boot Crashes</h2>
-<ol>
-<li>If booting via Atmosphere/Hekate, you'll get a TitleID/ProgramID for which program crashed. Check if this ID is in Atmosphere/contents, and if it is, delete it</li>
-<li>Check if you can boot normally<ul>
-<li>If you can, your cfw setup is likely fucked</li>
-</ul>
-</li>
-<li>Perform a <a href="#system-wipe">System Wipe</a></li>
-</ol>
-<h2 id="mmc-rebuild">MMC Rebuild</h2>
-<h3 id="step-0-making-a-nand-backup">Step 0: Making a nand backup</h3>
-<p>You probably want to make a nand backup before you start modifying your switch. Boot into <a href="https://github.com/CTCaer/hekate/releases">Hekate</a>, Go to tools, Backup eMMC, and backup both <code>eMMC BOOT0 &amp; BOOT1</code> and <code>eMMC RAW GPP</code></p>
-<h3 id="step-1-getting-the-files">Step 1: Getting the files</h3>
-<p>What you need:</p>
+<p>If you experience <strong>ANY</strong> of the above or need any assistance in general, including following this guide, please ask for help in <code>#switch-assistance-1</code> or <code>#switch-assistance-2</code> in the <a href="https://discord.gg/C29hYvh">NH-Discord server</a> before doing anything and don't continue following this guide.</p>
+<p>Please do <strong>NOT</strong> misuse this guide or any of the tools used within this guide. Additionally you should refrain from using tools like "NANDFix", "NANDFixPro" and "DowngradeFixer".</p>
+<p>Finally; boot issues caused by recently-installed modchip installations, general hardware failure or hardware malfunction will <strong>NOT</strong> be fixed by following the steps below. Please do <strong>NOT</strong> follow this guide if you experience such issues.</p>
+</div>
+<h2 id="before-starting-sd-preparation"><strong>Before starting - SD Preparation</strong><a class="headerlink" href="#before-starting-sd-preparation" title="Permanent link">&para;</a></h2>
+<p>This section will make sure you've got a minimalistic CFW setup on a new, separate SD card. Following this section ensures that you don't run into any issues caused by improper configurations later.</p>
+<h4 id="what-you-need"><strong>What you need:</strong><a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Your own prod.keys file (This needs to be yours specifically (Unless you are trying to just generate the BIS files)! If you don't have them, try to dump them via <a href="https://github.com/shchmue/Lockpick_RCM/releases">Lockpick_RCM</a>)</li>
-<li>Your switch firmware (Try to dump them via <a href="https://github.com/suchmememanyskill/TegraExplorer/releases">Tegraexplorer</a> if you don't have them)</li>
-<li><a href="https://github.com/suchmememanyskill/EmmcHaccGen/releases">EmmcHaccGen</a></li>
+<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases">hekate</a> (<code>hekate_ctcaer_X.X.X.zip</code>)</li>
+<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases">Atmosphere</a> (<code>atmosphere-X.XX.X-master-XXXXXXXXX+hbl-X.X.X+hbmenu-X.X.X.zip</code>)</li>
+<li>The hekate config file: <a href="https://nintendohomebrew.com/assets/hekate_ipl.ini">hekate_ipl.ini</a></li>
+<li>A separate microSD card (preferably 64GB+) formatted as FAT32. (To format it as FAT32, follow <a href="https://wiki.hacks.guide/wiki/Formatting_an_SD_card">this guide</a>.)</li>
 </ul>
-<p>Instructions:</p>
+<h4 id="instructions"><strong>Instructions:</strong><a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Extract the EmmcHaccGen zip somewhere, and place the prod.keys and the fw dump in the same folder</li>
-<li>Open up a cmd prompt in the same folder, and execute the command <code>EmmcHaccGen.exe --keys (location of the prod.keys file) --fw (location of the firmware folder)</code> (example: <code>EmmcHaccGen --keys prod.keys --fw 9.1.0)</code>)</li>
-<li>You should now have a folder called NX-(fw version)_exFAT. If you do, you can continue</li>
+<li>Extract the <em>contents</em> of the hekate <code>.zip</code> to the root of your SD card.</li>
+<li>Extract the <em>contents</em> of the Atmosphere <code>.zip</code> to the root of your SD card.</li>
+<li>Place the <code>hekate_ipl.ini</code> file in <code>sd:/bootloader</code>.</li>
 </ol>
-<h3 id="step-2-flashing-the-files">Step 2: Flashing the files</h3>
-<p>What you need:</p>
+<p>Once you've done this, you may continue on with this guide.</p>
+<hr />
+<h2 id="quick-reference"><strong>Quick reference</strong><a class="headerlink" href="#quick-reference" title="Permanent link">&para;</a></h2>
 <ul>
-<li>The boot.bis file and SYSTEM folder generated by emmchaccgen</li>
-<li><a href="https://suchmememanyskill.github.io/TegraScript/scripts/SystemRestoreV3.te" download>systemRestore.te</a></li>
-<li><a href="https://github.com/suchmememanyskill/TegraExplorer/releases">TegraExplorer</a> </li>
+<li><a href="#early-boot-errors">My Switch seemingly does nothing when I try to boot it up normally</a></li>
+<li><a href="#mid-boot-errors">My Switch shows the Nintendo and/or black and white atmosphere logo, then black screens</a></li>
+<li><a href="#late-boot-errors">My Switch gets stuck at the Switch logo</a></li>
+<li><a href="#boot-crashes">My Switch crashes on boot</a></li>
+<li><a href="#mmc-rebuild">Last Resort: Full MMC Rebuild guide</a></li>
 </ul>
-<p>Instructions:</p>
+<hr />
+<h2 id="types-of-boot-errors"><strong>Types of boot errors</strong><a class="headerlink" href="#types-of-boot-errors" title="Permanent link">&para;</a></h2>
+<p>The tabs below contain <em>possible</em> fixes for "common" boot errors, these are <strong>NOT</strong> guaranteed to work on every console. Many issues can <em>look</em> the same but can have fundamentally different causes.</p>
+<p>The instructions below are numbered based on level of 'severity' (<strong>low</strong> to <strong>high</strong>), please don't follow all of them if you have no reason to do so.</p>
+<ul>
+<li><strong>Note:</strong> The first 3 boot error sections assume you <em>aren't</em> booting with a custom bootloader/Atmosphere in the first place. Please keep this in mind.</li>
+</ul>
+<hr />
+<h3 class="has-subtitle" id="early-boot-errors"><strong>Early-boot errors</strong><a class="headerlink" href="#early-boot-errors" title="Permanent link">&para;</a></h3>
+<p><em>My Switch seemingly does nothing when I try to boot it up normally</em></p>
 <ol>
-<li>Make a folder on your sd card, then copy boot.bis, SYSTEM and systemrestore.te in that folder</li>
-<li>Insert your sd card in your switch and inject <code>Tegraexplorer.bin</code></li>
-<li>Navigate to SD, your folder, systemRestore.te and then <code>Launch Script</code></li>
-<li>Follow the script til completion (Restore both BIS and SYSTEM)</li>
-<li>Try to boot your switch with Atmosphere.<ul>
-<li>Note: if you followed the entirety of this guide, AutoRCM will be enabled! You need to boot via RCM</li>
-<li>If you do not have a basic Atmosphere setup on your SD, Download the atmosphere zip and fusee-primary.bin from <a href="https://github.com/Atmosphere-NX/Atmosphere/releases">here</a>. Extract the contents of the zip to the root of your sd, and inject fusee-primary.bin</li>
-<li>If your switch does not boot, perform the <a href="#system-wipe">System Wipe</a></li>
+<li>Check if you can boot <code>Stock sysMMC</code> (not OFW) via hekate's <code>Launch</code> menu.<ul>
+<li>If you can, you likely have <a href="https://switch.hacks.guide/extras/autorcm">AutoRCM</a> enabled or you have an e-fuse mismatch on your hands. Update to the latest firmware via stock or sysCFW.</li>
+</ul>
+</li>
+<li><a href="https://switch.hacks.guide/extras/nandrestore.html">Restore a NAND backup</a> if you have one.</li>
+<li>Follow everything from the <a href="#mmc-rebuild">MMC Rebuild</a> section with the same firmware version as your current firmware version.</li>
+<li>If <strong>NONE</strong> of these steps worked, please ask for help in <code>#switch-assistance-1</code> or <code>#switch-assistance-2</code> in the <a href="https://discord.gg/C29hYvh">NH-Discord server</a>.</li>
+</ol>
+<hr />
+<h3 class="has-subtitle" id="mid-boot-errors"><strong>Mid-boot errors</strong><a class="headerlink" href="#mid-boot-errors" title="Permanent link">&para;</a></h3>
+<p><em>My Switch shows the Nintendo and/or black and white atmosphere logo, then black screens</em></p>
+<ol>
+<li>Check if you can boot stock (not OFW) via hekate's <code>Launch</code> menu.<ul>
+<li>If you can boot stock but not sysCFW, you might be running too many sysmodules, try to disable some.</li>
+</ul>
+</li>
+<li>Check if you have an exFAT formatted SD. If it's formatted as exFAT, format it to FAT32 using <a href="https://wiki.hacks.guide/wiki/Formatting_an_SD_card">this guide</a>.</li>
+<li>Check if your <code>SYSTEM</code> partition is mountable. This can be done via <code>Browse eMMC</code> &gt; <code>SYSTEM</code> in <a href="https://github.com/suchmememanyskill/TegraExplorer/releases">TegraExplorer</a></li>
+<li><a href="https://switch.hacks.guide/extras/nandrestore.html">Restore a NAND backup</a> if you have one.</li>
+<li>Follow everything from the <a href="#mmc-rebuild">MMC Rebuild</a> section.</li>
+<li>If <strong>NONE</strong> of these steps worked, please ask for help in <code>#switch-assistance-1</code> or <code>#switch-assistance-2</code> in the <a href="https://discord.gg/C29hYvh">NH-Discord server</a>.</li>
+</ol>
+<hr />
+<h3 class="has-subtitle" id="late-boot-errors"><strong>Late-boot errors</strong><a class="headerlink" href="#late-boot-errors" title="Permanent link">&para;</a></h3>
+<p><em>My Switch gets stuck at the Switch logo</em></p>
+<ol>
+<li>Check if you can boot stock (not OFW) via hekate's <code>Launch</code> menu.<ul>
+<li>If you can boot stock but not sysCFW, you might be running too many sysmodules, try to disable some.</li>
+</ul>
+</li>
+<li>Check if your <code>USER</code> partition is mountable. This can be done via <code>Browse eMMC</code> &gt; <code>USER</code> in <a href="https://github.com/suchmememanyskill/TegraExplorer/releases">TegraExplorer</a></li>
+<li>Check if your <code>PRODINFO</code> is fine. To do this, follow the steps below:<ol>
+<li>Boot TegraExplorer,</li>
+<li>Navigate to <code>Browse eMMC</code> &gt; <code>PRODINFO</code>,</li>
+<li>Select <code>PRODINFO</code> and dump it when prompted,</li>
+<li>Go back to TegraExplorer's main menu and navigate to <code>Browse SD</code>,</li>
+<li>Navigate to <code>tegraexplorer</code> &gt; <code>Dumps</code> &gt; <code>PRODINFO</code>,</li>
+<li>Select <code>PRODINFO</code>, select <code>View hex</code>.<ul>
+<li>"Intact" PRODINFO starts with <code>CAL0</code> and contains your Switch serial number at offset <code>0x250</code>. You should ensure that the serial number in the PRODINFO you're viewing matches the one on the bottom of your console (or underneath the kickstand on OLED consoles).</li>
 </ul>
 </li>
 </ol>
-<h2 id="system-wipe">System Wipe</h2>
+</li>
+<li><a href="https://switch.hacks.guide/extras/nandrestore.html">Restore a NAND backup</a> if you have one.</li>
+<li>Perform a <a href="#system-wipe">System Wipe</a>.</li>
+<li>Follow everything from the <a href="#mmc-rebuild">MMC Rebuild</a> section.</li>
+<li>If <strong>NONE</strong> of these steps worked, please ask for help in <code>#switch-assistance-1</code> or <code>#switch-assistance-2</code> in the <a href="https://discord.gg/C29hYvh">NH-Discord server</a>.</li>
+</ol>
+<hr />
+<h3 class="has-subtitle" id="boot-crashes"><strong>Boot crashes</strong><a class="headerlink" href="#boot-crashes" title="Permanent link">&para;</a></h3>
+<p><em>My Switch crashes on boot</em></p>
+<ol>
+<li>Check if you can boot <code>Stock sysMMC</code> via hekate's <code>Launch</code> menu or OFW via <code>Reboot</code> &gt; <code>OFW</code> from hekate's <code>Home</code> menu.</li>
+<li><a href="#step-0-making-a-nand-backup">Make a NAND backup</a> and perform a <a href="#system-wipe">System Wipe</a></li>
+<li>If <strong>NONE</strong> of these steps worked, please ask for help in <code>#switch-assistance-1</code> or <code>#switch-assistance-2</code> in the <a href="https://discord.gg/C29hYvh">NH-Discord server</a>.</li>
+</ol>
+<hr />
+<h2 id="mmc-rebuild"><strong>MMC Rebuild</strong><a class="headerlink" href="#mmc-rebuild" title="Permanent link">&para;</a></h2>
+<p>An MMC Rebuild is an "advanced" procedure which involves generating system restoration files using the decryption keys of your Switch and your Switch firmware dump in combination with a tool called <a href="https://github.com/suchmememanyskill/EmmcHaccGen">EmmcHaccGen</a>, to (hopefully) restore your Switch back to a working state. Please keep in mind that following this section of the guide should <strong>ONLY</strong> be done if you have a valid reason to do so. 
+Doing otherwise may cause damage to your console (unable to play online after recovery), or data loss (save game loss). </p>
+<p><strong>Note:</strong> An MMC Rebuild is specifically meant to be used for restoring your sysmmc to a working state, <em>not</em> an emummc. You can simply recreate an emummc via hekate &gt; <code>emuMMC</code> &gt; <code>Create emuMMC</code> &gt; <code>SD Partition</code> &gt; <code>Part 1</code> if your sysmmc is functioning like normal.</p>
+<h3 id="step-0-making-a-nand-backup"><strong>Step 0: Making a NAND backup</strong><a class="headerlink" href="#step-0-making-a-nand-backup" title="Permanent link">&para;</a></h3>
+<p>You will want to make a NAND backup before you start modifying your Switch. To do this, follow the steps below.</p>
+<h4 id="instructions_1">Instructions:<a class="headerlink" href="#instructions_1" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Inject the hekate payload (<code>hekate_ctcaer_X.X.X.bin</code>) using your desired RCM payload injector.<ul>
+<li><strong>Note:</strong> If you use a modchipped Switch, you can place the hekate payload on the root of your SD card, rename it to <code>payload.bin</code> and turn on your Switch.</li>
+</ul>
+</li>
+<li>Go to <code>Tools</code> &gt; <code>Backup eMMC</code> and back up <code>eMMC BOOT0 &amp; BOOT1</code> &amp; <code>eMMC RAW GPP</code>.</li>
+<li>You should now end up with <code>BOOT0/BOOT1</code> and 15 parts (30 parts if on an OLED Switch) of <code>rawnand.bin</code> in <code>sd:/backup/&lt;random characters&gt;/</code>.</li>
+<li>Navigate to <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code> and connect your Switch to your PC via USB.</li>
+<li>Access your SD card and back up the <code>backup</code> folder on the root of your SD card to your PC.</li>
+<li>Once done, safely eject the <code>hekate UMS</code> device from your PC, then navigate back to hekate's <code>Home</code> menu.</li>
+</ol>
+<hr />
+<h3 id="step-1-generating-the-files-and-copying-them-to-your-sd-card"><strong>Step 1: Generating the files and copying them to your SD card</strong><a class="headerlink" href="#step-1-generating-the-files-and-copying-them-to-your-sd-card" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Please verify which console model you have before continuing.</p>
+<ol>
+<li>Navigate to <code>Console Info</code> &gt; <code>HW &amp; Fuses</code> in hekate.</li>
+<li>At the top left, on the <code>SoC:</code> line, it will say one of the following:<ul>
+<li><code>T210 (Erista)</code> to indicate an Erista (V1) console,</li>
+<li><code>T210B01 (Mariko)</code> to indicate a Mariko (V2) console.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Note:</strong> If you have an Erista (V1) console, please check if it says <code>This unit is exploitable to the RCM bug!</code> or <code>This unit is patched to the RCM bug!</code> in the bottom right. If it says <code>This unit is patched to the RCM bug!</code>, you have a patched Erista (V1) console.</p>
+<p>Once you've determined which console model you have, you may continue.</p>
+</div>
+<h4 id="what-you-need_1">What you need:<a class="headerlink" href="#what-you-need_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><em>Your</em> Switch's <code>prod.keys</code>. (This needs to be yours specifically! Decryption keys are console-unique.) If you don't have them, try to dump them via Lockpick_RCM.<ul>
+<li><strong>Note:</strong> Lockpick_RCM is not linked due to legal concerns, and help is not provided with obtaining it. Please refrain from using modified versions of Lockpick_RCM, such as "Lockpick_RCM_Pro".</li>
+</ul>
+</li>
+<li>Your Switch's firmware dump (try to dump your firmware via <a href="https://github.com/suchmememanyskill/TegraExplorer/releases">TegraExplorer's</a> <code>FirmwareDump.te</code> script).</li>
+<li>A computer running Windows, Linux or macOS.</li>
+</ul>
+<h4 id="follow-the-instructions-for-your-computers-operating-system-below">Follow the instructions for your computer's operating system below:<a class="headerlink" href="#follow-the-instructions-for-your-computers-operating-system-below" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="windows-x64" name="__tabbed_1" type="radio" /><input id="linux-x64" name="__tabbed_1" type="radio" /><input id="macos-x64arm64" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="windows-x64">Windows x64</label><label for="linux-x64">Linux x64</label><label for="macos-x64arm64">macOS x64/arm64</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<h4 id="what-you-need_2">What you need:<a class="headerlink" href="#what-you-need_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The latest release of <a href="https://github.com/suchmememanyskill/EmmcHaccGen/releases">EmmcHaccGen</a> (<code>EmmcHaccGen-win-x64.GUI.exe</code>)</li>
+</ul>
+<h4 id="instructions_2">Instructions:<a class="headerlink" href="#instructions_2" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Open <code>EmmcHaccGen-win-x64.GUI.exe</code>, import your Switch's prod.keys and firmware folder.</li>
+<li>Configure the sliders/toggles depending on your console model:<ul>
+<li><strong>V1 Unpatched consoles:</strong> <em>Enable</em> the <code>Enable AutoRCM</code> and, if applicable, the <code>ExFAT Support</code> toggles.</li>
+<li><strong>V1 Patched consoles:</strong> <em>Disable</em> the <code>Enable AutoRCM</code> toggle and, if applicable, <em>enable</em> the <code>ExFAT Support</code> toggle.</li>
+<li><strong>V2/Mariko consoles:</strong> <em>Enable</em> the <code>Generate Mariko Firmware</code> and, if applicable, the <code>ExFAT Support</code> toggles.</li>
+</ul>
+</li>
+<li>Click <code>Generate</code> and select any location on your PC to save the generated files to.</li>
+<li>Once done, boot hekate (if you aren't already in hekate/Nyx), navigate to <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code> and connect your Switch to your PC via USB.</li>
+<li>In EmmcHaccGen GUI, click <code>Prepare SD Card</code> and select/open the root of your SD card.</li>
+<li>Once done, click <code>Yes</code> to proceed with copying/downloading files to the <code>MMCRebuild</code> and <code>bootloader</code> folders on the root of your SD card.</li>
+<li>Once finished, safely eject the <code>hekate UMS</code> device from your PC, then navigate to hekate's <code>Home</code> menu &gt; <code>Payloads</code> &gt; <code>TegraExplorer.bin</code>.</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<h4 id="what-you-need_3">What you need:<a class="headerlink" href="#what-you-need_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The latest release of <a href="https://github.com/suchmememanyskill/EmmcHaccGen/releases">EmmcHaccGen</a> (<code>EmmcHaccGen-linux-x64.GUI</code>)</li>
+</ul>
+<h4 id="instructions_3">Instructions:<a class="headerlink" href="#instructions_3" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Open <code>EmmcHaccGen-linux-x64.GUI</code>, import your Switch's prod.keys and firmware folder.</p>
+<div class="admonition note">
+<p class="admonition-title">You <em>may</em> need to make the <code>EmmcHaccGen-linux-x64.GUI</code> file executable before being able to open it.</p>
+<p>To do this, you can do one of the following: </p>
+<ol>
+<li>Use the terminal command: <code>chmod +x path/to/EmmcHaccGen-linux-x64.GUI</code> and then open it from your file manager or,</li>
+<li>On most (modern) Linux distributions you can right click the file from your desired file manager and enable <code>Executable as Program</code> or <code>Allow executing file as program</code> or something along those lines in the properties of the executable and open it from your file manager.</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Configure the sliders/toggles depending on your console model:</p>
+<ul>
+<li><strong>V1 Unpatched consoles:</strong> <em>Enable</em> the <code>Enable AutoRCM</code> and, if applicable, the <code>ExFAT Support</code> toggles.</li>
+<li><strong>V1 Patched consoles:</strong> <em>Disable</em> the <code>Enable AutoRCM</code> toggle and, if applicable, <em>enable</em> the <code>ExFAT Support</code> toggle.</li>
+<li><strong>V2/Mariko consoles:</strong> <em>Enable</em> the <code>Generate Mariko Firmware</code> and, if applicable, the <code>ExFAT Support</code> toggles.</li>
+</ul>
+</li>
+<li>Click <code>Generate</code> and select any location on your PC to save the generated files to.</li>
+<li>Once done, boot hekate (if you aren't already in hekate/Nyx), navigate to <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code> and connect your Switch to your PC via USB.</li>
+<li>In EmmcHaccGen GUI, click <code>Prepare SD Card</code> and select/open the root of your SD card.</li>
+<li>Once done, click <code>Yes</code> to proceed with copying/downloading files to the <code>MMCRebuild</code> and <code>bootloader</code> folders on the root of your SD card.</li>
+<li>Once finished, safely eject the <code>hekate UMS</code> device from your PC, then navigate to hekate's <code>Home</code> menu &gt; <code>Payloads</code> &gt; <code>TegraExplorer.bin</code>.</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<h4 id="what-you-need_4">What you need:<a class="headerlink" href="#what-you-need_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The latest release of <a href="https://github.com/suchmememanyskill/EmmcHaccGen/releases">EmmcHaccGen</a> (<code>EmmcHaccGen-osx-x64-app.zip</code> or <code>EmmcHaccGen-osx-arm64-app.zip</code>)</li>
+</ul>
+<h4 id="instructions_4">Instructions:<a class="headerlink" href="#instructions_4" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Extract the contents of the <code>EmmcHaccGen-osx-x64-app.zip</code> or <code>EmmcHaccGen-osx-arm64-app.zip</code> to a location on your mac, double click <code>EmmcHaccGen.app</code> to open the app and import your Switch's prod.keys and firmware folder.</p>
+<div class="admonition note">
+<p class="admonition-title">You will need to 'trust' the <code>EmmcHaccGen.app</code> executable before being able to open it.</p>
+<p>To do this, you can do the following: </p>
+<ol>
+<li>Open a terminal window.</li>
+<li>Enter the following command: <code>xattr -dr com.apple.quarantine /path/to/EmmcHaccGen.app</code> (replacing <code>/path/to</code> with the actual path to the executable).</li>
+<li>You should now be able to double click the app to open it from Finder.</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Configure the sliders/toggles depending on your console model:</p>
+<ul>
+<li><strong>V1 Unpatched consoles:</strong> <em>Enable</em> the <code>Enable AutoRCM</code> and, if applicable, the <code>ExFAT Support</code> toggles.</li>
+<li><strong>V1 Patched consoles:</strong> <em>Disable</em> the <code>Enable AutoRCM</code> toggle and, if applicable, <em>enable</em> the <code>ExFAT Support</code> toggle.</li>
+<li><strong>V2/Mariko consoles:</strong> <em>Enable</em> the <code>Generate Mariko Firmware</code> and, if applicable, the <code>ExFAT Support</code> toggles.</li>
+</ul>
+</li>
+<li>
+<p>Click <code>Generate</code> and select any location on your PC to save the generated files to.</p>
+</li>
+<li>Once done, boot hekate (if you aren't already in hekate/Nyx), navigate to <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code> and connect your Switch to your PC via USB.</li>
+<li>In EmmcHaccGen GUI, click <code>Prepare SD Card</code> and select/open the root of your SD card.</li>
+<li>Once done, click <code>Yes</code> to proceed with copying/downloading files to the <code>MMCRebuild</code> and <code>bootloader</code> folders on the root of your SD card.</li>
+<li>Once finished, safely eject the <code>hekate UMS</code> device from your mac, then navigate to hekate's <code>Home</code> menu &gt; <code>Payloads</code> &gt; <code>TegraExplorer.bin</code>.</li>
+</ol>
+</div>
+</div>
+</div>
+<h3 id="step-2-flashing-the-files"><strong>Step 2: Flashing the files</strong><a class="headerlink" href="#step-2-flashing-the-files" title="Permanent link">&para;</a></h3>
+<h4 id="instructions_5">Instructions:<a class="headerlink" href="#instructions_5" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Navigate to <code>Browse SD</code> &gt; <code>MMCRebuild</code> &gt; <code>SystemRestoreV3.te</code>.<ul>
+<li><strong>Note:</strong> Navigation in TegraExplorer on Normal/OLED Switch models can be done using the volume buttons + power and/or your joycons while navigation on Switch Lite consoles can only be done using the volume buttons + power.</li>
+</ul>
+</li>
+<li>Select <code>Launch Script</code> &gt; <code>Apply on Sysmmc</code> &gt; <code>Restore Both</code>.</li>
+<li>After the script has finished, try to boot sysCFW from hekate's <code>Launch</code> menu. <ul>
+<li><strong>Note:</strong> If you lack the sysCFW boot entry in your <code>Launch</code> menu, please replace the <code>hekate_ipl.ini</code> file in <code>sd:/bootloader</code> with with <a href="https://nintendohomebrew.com/assets/hekate_ipl.ini">this one</a>. The sysCFW boot entry is called <code>Atmosphere PKG3 sysMMC</code>.</li>
+<li><strong>Note:</strong> If you have an unpatched Switch, AutoRCM will be enabled! You will need to use a custom bootloader (hekate/fusee) to be able to boot.</li>
+</ul>
+</li>
+<li>If your Switch does not boot (correctly), perform the <a href="#system-wipe">System Wipe</a> section below.</li>
+</ol>
+<h2 id="system-wipe"><strong>System Wipe</strong><a class="headerlink" href="#system-wipe" title="Permanent link">&para;</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">System Wipe</p>
-<p>This will wipe everything from your system. Including saves, installed games and everything else. Be safe and always have a nand backup</p>
+<p>This will wipe <strong>EVERYTHING</strong> from your system, including; game save data, installed games/titles, all user data and everything else. Be safe and always have a NAND backup.</p>
 </div>
-<p>What you need:</p>
+<h4 id="what-you-need_5">What you need:<a class="headerlink" href="#what-you-need_5" title="Permanent link">&para;</a></h4>
 <ul>
-<li><a href="https://github.com/suchmememanyskill/TegraExplorer/releases">TegraExplorer</a></li>
+<li><a href="https://github.com/suchmememanyskill/TegraExplorer/releases">TegraExplorer</a> (<code>TegraExplorer.bin</code>)</li>
 </ul>
-<p>Instructions:</p>
+<h4 id="instructions_6">Instructions:<a class="headerlink" href="#instructions_6" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Inject TegraExplorer using your favorite payload injector (for example TegraRcmGui)</li>
-<li>Select <code>SystemWipe.te</code> from the main menu</li>
-<li>Select <code>Wipe sysmmc</code> to wipe sys</li>
-<li>Confirm using power</li>
-</ol></div>
-        
-        
-    </div>
+<li>Place the downloaded <code>TegraExplorer.bin</code> in <code>sd:/bootloader/payloads</code>, replacing the existing payload if it exists.</li>
+<li>Inject the hekate payload (<code>hekate_ctcaer_X.X.X.bin</code>) using your desired RCM payload injector.<ul>
+<li><strong>Note:</strong> If you use a modchipped Switch, you can place the hekate payload on the root of your SD card, rename it to <code>payload.bin</code> and turn on your Switch.</li>
+</ul>
+</li>
+<li>Navigate to <code>Payloads</code> &gt; <code>TegraExplorer.bin</code></li>
+<li>Navigate to <code>SystemWipe.te</code> and select <code>Wipe sysmmc</code> to wipe your sysmmc.</li>
+<li>Confirm using the <code>Power</code> button or the <code>A</code> button of your joycon.</li>
+<li>Try to boot sysCFW from hekate's <code>Launch</code> menu.<ul>
+<li><strong>Note:</strong> If you <em>still</em> cannot boot, please ask for help in <code>#switch-assistance-1</code> or <code>#switch-assistance-2</code> in the <a href="https://discord.gg/C29hYvh">NH-Discord server</a>.</li>
+</ul>
+</li>
+</ol>
 
-    
-      <footer class="col-md-12 text-center">
-          
-          
-            <hr>
-            <p>
-            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-            </p>
-          
 
-          
-          
-      </footer>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../js/bootstrap-3.0.3.min.js"></script>
 
-    
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-        
-    <script>hljs.initHighlightingOnLoad();</script>
-    
 
-    <script>var base_url = "../.."</script>
-    
-    <script src="../../js/base.js"></script>
-    <script src="../../js/redirect.js"></script>
-    <script src="../../search/main.js"></script>
 
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-    </body>
-
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.integrate", "navigation.instant", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/redirect.js"></script>
+      
+    
+  </body>
 </html>
